@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Object2VR 3.1.9/10783
 // Filename: test.ggsk
-// Generated 周四 7月 7 13:14:58 2022
+// Generated 周四 7月 7 13:31:09 2022
 
 function object2vrSkin(player,base) {
 	var me=this;
@@ -43,7 +43,7 @@ function object2vrSkin(player,base) {
 		}
 	}
 	
-	this.player.setMargins(100,100,100,100);
+	this.player.setMargins(0,0,0,0);
 	
 	this.updateSize=function(startElement) {
 		var stack=new Array();
@@ -406,33 +406,6 @@ function object2vrSkin(player,base) {
 		this.__24.ggTextDiv.innerHTML="<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d14639.996133994544!2d113.14295377677377!3d23.460499354528555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3402e830895b3a5b%3A0xb9c508a9f97ba595!2z5Lit5Zu95bm_5Lic55yB5bm_5bee5biC6Iqx6YO95Yy654uu5bKt6ZWHIOmCruaUv-e8lueggTogNTEwODUw!5e0!3m2!1szh-CN!2shk!4v1657146709823!5m2!1szh-CN!2shk\" width=\"1280\" height=\"720\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>";
 		this.__24.appendChild(this.__24__text);
 		this.__22.appendChild(this.__24);
-		this._button_1=document.createElement('div');
-		this._button_1.ggId="Button 1";
-		this._button_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		this._button_1.ggVisible=true;
-		this._button_1.className='ggskin ggskin_button';
-		this._button_1.ggType='button';
-		hs ='position:absolute;';
-		hs+='left: -214px;';
-		hs+='top:  0px;';
-		hs+='width: 192px;';
-		hs+='height: 151px;';
-		hs+=cssPrefix + 'transform-origin: 50% 50%;';
-		hs+='visibility: inherit;';
-		hs+='cursor: pointer;';
-		this._button_1.setAttribute('style',hs);
-		this._button_1__img=document.createElement('img');
-		this._button_1__img.className='ggskin ggskin_button';
-		this._button_1__img.setAttribute('src',basePath + 'images/button_1.png');
-		this._button_1__img.setAttribute('style','position: absolute;top: 0px;left: 0px;-webkit-user-drag:none;');
-		this._button_1__img.className='ggskin ggskin_button';
-		this._button_1__img['ondragstart']=function() { return false; };
-		me.player.checkLoaded.push(this._button_1__img);
-		this._button_1.appendChild(this._button_1__img);
-		this._button_1.onclick=function () {
-			me.player.openUrl("https:\/\/www.jcstation3d.com\/","");
-		}
-		this.__22.appendChild(this._button_1);
 		this.__23=document.createElement('div');
 		this.__23.ggId="\u529f\u80fd\u660e\u7ec6";
 		this.__23.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
@@ -443,14 +416,14 @@ function object2vrSkin(player,base) {
 			this.style[domTransition]='none';
 			if (this.parentNode) {
 				var w=this.parentNode.offsetWidth;
-				this.style.left=Math.floor(-366 + w/2) + 'px';
+				this.style.left=Math.floor(-365 + w/2) + 'px';
 				var h=this.parentNode.offsetHeight;
-				this.style.top=Math.floor(-377 + h/2) + 'px';
+				this.style.top=Math.floor(-376 + h/2) + 'px';
 			}
 		}
 		hs ='position:absolute;';
-		hs+='left: -366px;';
-		hs+='top:  -377px;';
+		hs+='left: -365px;';
+		hs+='top:  -376px;';
 		hs+='width: 674px;';
 		hs+='height: 762px;';
 		hs+=cssPrefix + 'transform-origin: 50% 50%;';
@@ -476,14 +449,14 @@ function object2vrSkin(player,base) {
 			this.style[domTransition]='none';
 			if (this.parentNode) {
 				var w=this.parentNode.offsetWidth;
-				this.style.left=Math.floor(-316 + w/2) + 'px';
+				this.style.left=Math.floor(-323 + w/2) + 'px';
 				var h=this.parentNode.offsetHeight;
-				this.style.top=Math.floor(-226 + h) + 'px';
+				this.style.top=Math.floor(-154 + h) + 'px';
 			}
 		}
 		hs ='position:absolute;';
-		hs+='left: -316px;';
-		hs+='top:  -226px;';
+		hs+='left: -323px;';
+		hs+='top:  -154px;';
 		hs+='width: 643px;';
 		hs+='height: 118px;';
 		hs+=cssPrefix + 'transform-origin: 50% 50%;';
@@ -515,7 +488,7 @@ function object2vrSkin(player,base) {
 		this.__20.setAttribute('style',hs);
 		this.__20__img=document.createElement('img');
 		this.__20__img.className='ggskin ggskin_svg';
-		this.__20__img.setAttribute('src',basePath + 'images/_20.png');
+		this.__20__img.setAttribute('src',basePath + 'images/_20.svg');
 		this.__20__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__20__img['ondragstart']=function() { return false; };
 		this.__20.appendChild(this.__20__img);
@@ -530,7 +503,7 @@ function object2vrSkin(player,base) {
 			me.__20.style[domTransition]='none';
 			me.__20.ggParameter.sx=1.2;me.__20.ggParameter.sy=1.2;
 			me.__20.style[domTransform]=parameterToTransform(me.__20.ggParameter);
-			me.__20__img.src=basePath + 'images/_20__o.png';
+			me.__20__img.src=basePath + 'images/_20__o.svg';
 		}
 		this.__20.onmouseout=function () {
 			me.__21.style[domTransition]='none';
@@ -539,7 +512,7 @@ function object2vrSkin(player,base) {
 			me.__20.style[domTransition]='none';
 			me.__20.ggParameter.sx=1;me.__20.ggParameter.sy=1;
 			me.__20.style[domTransform]=parameterToTransform(me.__20.ggParameter);
-			me.__20__img.src=basePath + 'images/_20.png';
+			me.__20__img.src=basePath + 'images/_20.svg';
 		}
 		this.__21=document.createElement('div');
 		this.__21__text=document.createElement('div');
@@ -609,7 +582,7 @@ function object2vrSkin(player,base) {
 		this.__18.setAttribute('style',hs);
 		this.__18__img=document.createElement('img');
 		this.__18__img.className='ggskin ggskin_svg';
-		this.__18__img.setAttribute('src',basePath + 'images/_18.png');
+		this.__18__img.setAttribute('src',basePath + 'images/_18.svg');
 		this.__18__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__18__img['ondragstart']=function() { return false; };
 		this.__18.appendChild(this.__18__img);
@@ -700,7 +673,7 @@ function object2vrSkin(player,base) {
 		this.__16.setAttribute('style',hs);
 		this.__16__img=document.createElement('img');
 		this.__16__img.className='ggskin ggskin_svg';
-		this.__16__img.setAttribute('src',basePath + 'images/_16.png');
+		this.__16__img.setAttribute('src',basePath + 'images/_16.svg');
 		this.__16__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__16__img['ondragstart']=function() { return false; };
 		this.__16.appendChild(this.__16__img);
@@ -791,7 +764,7 @@ function object2vrSkin(player,base) {
 		this.__14.setAttribute('style',hs);
 		this.__14__img=document.createElement('img');
 		this.__14__img.className='ggskin ggskin_svg';
-		this.__14__img.setAttribute('src',basePath + 'images/_14.png');
+		this.__14__img.setAttribute('src',basePath + 'images/_14.svg');
 		this.__14__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__14__img['ondragstart']=function() { return false; };
 		this.__14.appendChild(this.__14__img);
@@ -882,7 +855,7 @@ function object2vrSkin(player,base) {
 		this.__13.setAttribute('style',hs);
 		this.__13__img=document.createElement('img');
 		this.__13__img.className='ggskin ggskin_svg';
-		this.__13__img.setAttribute('src',basePath + 'images/_13.png');
+		this.__13__img.setAttribute('src',basePath + 'images/_13.svg');
 		this.__13__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__13__img['ondragstart']=function() { return false; };
 		this.__13.appendChild(this.__13__img);
@@ -980,7 +953,7 @@ function object2vrSkin(player,base) {
 		this.__12.setAttribute('style',hs);
 		this.__12__img=document.createElement('img');
 		this.__12__img.className='ggskin ggskin_svg';
-		this.__12__img.setAttribute('src',basePath + 'images/_12.png');
+		this.__12__img.setAttribute('src',basePath + 'images/_12.svg');
 		this.__12__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__12__img['ondragstart']=function() { return false; };
 		this.__12.appendChild(this.__12__img);
@@ -1078,7 +1051,7 @@ function object2vrSkin(player,base) {
 		this.__11.setAttribute('style',hs);
 		this.__11__img=document.createElement('img');
 		this.__11__img.className='ggskin ggskin_svg';
-		this.__11__img.setAttribute('src',basePath + 'images/_11.png');
+		this.__11__img.setAttribute('src',basePath + 'images/_11.svg');
 		this.__11__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__11__img['ondragstart']=function() { return false; };
 		this.__11.appendChild(this.__11__img);
@@ -1172,7 +1145,7 @@ function object2vrSkin(player,base) {
 		this.__10.setAttribute('style',hs);
 		this.__10__img=document.createElement('img');
 		this.__10__img.className='ggskin ggskin_svg';
-		this.__10__img.setAttribute('src',basePath + 'images/_10.png');
+		this.__10__img.setAttribute('src',basePath + 'images/_10.svg');
 		this.__10__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__10__img['ondragstart']=function() { return false; };
 		this.__10.appendChild(this.__10__img);
@@ -1280,7 +1253,7 @@ function object2vrSkin(player,base) {
 		this.__9.setAttribute('style',hs);
 		this.__9__img=document.createElement('img');
 		this.__9__img.className='ggskin ggskin_svg';
-		this.__9__img.setAttribute('src',basePath + 'images/_9.png');
+		this.__9__img.setAttribute('src',basePath + 'images/_9.svg');
 		this.__9__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__9__img['ondragstart']=function() { return false; };
 		this.__9.appendChild(this.__9__img);
@@ -1388,7 +1361,7 @@ function object2vrSkin(player,base) {
 		this.__8.setAttribute('style',hs);
 		this.__8__img=document.createElement('img');
 		this.__8__img.className='ggskin ggskin_svg';
-		this.__8__img.setAttribute('src',basePath + 'images/_8.png');
+		this.__8__img.setAttribute('src',basePath + 'images/_8.svg');
 		this.__8__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__8__img['ondragstart']=function() { return false; };
 		this.__8.appendChild(this.__8__img);
@@ -1422,7 +1395,7 @@ function object2vrSkin(player,base) {
 			me.__8.style[domTransition]='none';
 			me.__8.ggParameter.sx=1.2;me.__8.ggParameter.sy=1.2;
 			me.__8.style[domTransform]=parameterToTransform(me.__8.ggParameter);
-			me.__8__img.src=basePath + 'images/_8__o.png';
+			me.__8__img.src=basePath + 'images/_8__o.svg';
 		}
 		this.__8.onmouseout=function () {
 			me._tt_info3.style[domTransition]='none';
@@ -1431,7 +1404,7 @@ function object2vrSkin(player,base) {
 			me.__8.style[domTransition]='none';
 			me.__8.ggParameter.sx=1;me.__8.ggParameter.sy=1;
 			me.__8.style[domTransform]=parameterToTransform(me.__8.ggParameter);
-			me.__8__img.src=basePath + 'images/_8.png';
+			me.__8__img.src=basePath + 'images/_8.svg';
 		}
 		this._tt_info3=document.createElement('div');
 		this._tt_info3__text=document.createElement('div');
@@ -1501,7 +1474,7 @@ function object2vrSkin(player,base) {
 		this.__7.setAttribute('style',hs);
 		this.__7__img=document.createElement('img');
 		this.__7__img.className='ggskin ggskin_svg';
-		this.__7__img.setAttribute('src',basePath + 'images/_7.png');
+		this.__7__img.setAttribute('src',basePath + 'images/_7.svg');
 		this.__7__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__7__img['ondragstart']=function() { return false; };
 		this.__7.appendChild(this.__7__img);
@@ -1539,10 +1512,10 @@ function object2vrSkin(player,base) {
 			me.__7.style[domTransform]=parameterToTransform(me.__7.ggParameter);
 		}
 		this.__7.onmousedown=function () {
-			me.__7__img.src=basePath + 'images/_7__a.png';
+			me.__7__img.src=basePath + 'images/_7__a.svg';
 		}
 		this.__7.onmouseup=function () {
-			me.__7__img.src=basePath + 'images/_7.png';
+			me.__7__img.src=basePath + 'images/_7.svg';
 		}
 		this._tt_fullscreen=document.createElement('div');
 		this._tt_fullscreen__text=document.createElement('div');
@@ -1612,7 +1585,7 @@ function object2vrSkin(player,base) {
 		this.__6.setAttribute('style',hs);
 		this.__6__img=document.createElement('img');
 		this.__6__img.className='ggskin ggskin_svg';
-		this.__6__img.setAttribute('src',basePath + 'images/_6.png');
+		this.__6__img.setAttribute('src',basePath + 'images/_6.svg');
 		this.__6__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__6__img['ondragstart']=function() { return false; };
 		this.__6.appendChild(this.__6__img);
@@ -1720,7 +1693,7 @@ function object2vrSkin(player,base) {
 		this.__5.setAttribute('style',hs);
 		this.__5__img=document.createElement('img');
 		this.__5__img.className='ggskin ggskin_svg';
-		this.__5__img.setAttribute('src',basePath + 'images/_5.png');
+		this.__5__img.setAttribute('src',basePath + 'images/_5.svg');
 		this.__5__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__5__img['ondragstart']=function() { return false; };
 		this.__5.appendChild(this.__5__img);
@@ -1828,7 +1801,7 @@ function object2vrSkin(player,base) {
 		this.__4.setAttribute('style',hs);
 		this.__4__img=document.createElement('img');
 		this.__4__img.className='ggskin ggskin_svg';
-		this.__4__img.setAttribute('src',basePath + 'images/_4.png');
+		this.__4__img.setAttribute('src',basePath + 'images/_4.svg');
 		this.__4__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__4__img['ondragstart']=function() { return false; };
 		this.__4.appendChild(this.__4__img);
@@ -1936,7 +1909,7 @@ function object2vrSkin(player,base) {
 		this.__3.setAttribute('style',hs);
 		this.__3__img=document.createElement('img');
 		this.__3__img.className='ggskin ggskin_svg';
-		this.__3__img.setAttribute('src',basePath + 'images/_3.png');
+		this.__3__img.setAttribute('src',basePath + 'images/_3.svg');
 		this.__3__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__3__img['ondragstart']=function() { return false; };
 		this.__3.appendChild(this.__3__img);
@@ -2067,7 +2040,7 @@ function object2vrSkin(player,base) {
 		this.__1.setAttribute('style',hs);
 		this.__1__img=document.createElement('img');
 		this.__1__img.className='ggskin ggskin_svg';
-		this.__1__img.setAttribute('src',basePath + 'images/_1.png');
+		this.__1__img.setAttribute('src',basePath + 'images/_1.svg');
 		this.__1__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__1__img['ondragstart']=function() { return false; };
 		this.__1.appendChild(this.__1__img);
@@ -2125,7 +2098,7 @@ function object2vrSkin(player,base) {
 		this.__2.setAttribute('style',hs);
 		this.__2__img=document.createElement('img');
 		this.__2__img.className='ggskin ggskin_svg';
-		this.__2__img.setAttribute('src',basePath + 'images/_2.png');
+		this.__2__img.setAttribute('src',basePath + 'images/_2.svg');
 		this.__2__img.setAttribute('style','position: absolute;top: 0px;left: 0px;width: 32px;height: 32px;-webkit-user-drag:none;');
 		this.__2__img['ondragstart']=function() { return false; };
 		this.__2.appendChild(this.__2__img);
@@ -2183,6 +2156,33 @@ function object2vrSkin(player,base) {
 		this.__.setAttribute('style',hs);
 		this._container_2.appendChild(this.__);
 		this.divSkin.appendChild(this._container_2);
+		this._button_1=document.createElement('div');
+		this._button_1.ggId="Button 1";
+		this._button_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		this._button_1.ggVisible=true;
+		this._button_1.className='ggskin ggskin_button';
+		this._button_1.ggType='button';
+		hs ='position:absolute;';
+		hs+='left: 481px;';
+		hs+='top:  70px;';
+		hs+='width: 192px;';
+		hs+='height: 151px;';
+		hs+=cssPrefix + 'transform-origin: 50% 50%;';
+		hs+='visibility: inherit;';
+		hs+='cursor: pointer;';
+		this._button_1.setAttribute('style',hs);
+		this._button_1__img=document.createElement('img');
+		this._button_1__img.className='ggskin ggskin_button';
+		this._button_1__img.setAttribute('src',basePath + 'images/button_1.png');
+		this._button_1__img.setAttribute('style','position: absolute;top: 0px;left: 0px;-webkit-user-drag:none;');
+		this._button_1__img.className='ggskin ggskin_button';
+		this._button_1__img['ondragstart']=function() { return false; };
+		me.player.checkLoaded.push(this._button_1__img);
+		this._button_1.appendChild(this._button_1__img);
+		this._button_1.onclick=function () {
+			me.player.openUrl("https:\/\/www.jcstation3d.com\/","");
+		}
+		this.divSkin.appendChild(this._button_1);
 		this.divSkin.ggUpdateSize=function(w,h) {
 			me.updateSize(me.divSkin);
 		}
