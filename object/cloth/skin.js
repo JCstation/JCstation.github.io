@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Object2VR 3.1.9/10783
 // Filename: test.ggsk
-// Generated 周四 7月 7 13:31:09 2022
+// Generated 周四 7月 7 14:09:16 2022
 
 function object2vrSkin(player,base) {
 	var me=this;
@@ -437,6 +437,33 @@ function object2vrSkin(player,base) {
 		this.__23__img['ondragstart']=function() { return false; };
 		me.player.checkLoaded.push(this.__23__img);
 		this.__23.appendChild(this.__23__img);
+		this._button_1=document.createElement('div');
+		this._button_1.ggId="Button 1";
+		this._button_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		this._button_1.ggVisible=false;
+		this._button_1.className='ggskin ggskin_button';
+		this._button_1.ggType='button';
+		hs ='position:absolute;';
+		hs+='left: -188px;';
+		hs+='top:  0px;';
+		hs+='width: 192px;';
+		hs+='height: 151px;';
+		hs+=cssPrefix + 'transform-origin: 50% 50%;';
+		hs+='visibility: hidden;';
+		hs+='cursor: pointer;';
+		this._button_1.setAttribute('style',hs);
+		this._button_1__img=document.createElement('img');
+		this._button_1__img.className='ggskin ggskin_button';
+		this._button_1__img.setAttribute('src',basePath + 'images/button_1.png');
+		this._button_1__img.setAttribute('style','position: absolute;top: 0px;left: 0px;-webkit-user-drag:none;');
+		this._button_1__img.className='ggskin ggskin_button';
+		this._button_1__img['ondragstart']=function() { return false; };
+		me.player.checkLoaded.push(this._button_1__img);
+		this._button_1.appendChild(this._button_1__img);
+		this._button_1.onclick=function () {
+			me.player.openUrl("https:\/\/www.jcstation3d.com\/","");
+		}
+		this.__23.appendChild(this._button_1);
 		this.__22.appendChild(this.__23);
 		this.divSkin.appendChild(this.__22);
 		this._container_2=document.createElement('div');
@@ -1168,6 +1195,9 @@ function object2vrSkin(player,base) {
 				me.__10.style.visibility=me.__10.ggVisible?'inherit':'hidden';
 			}
 			me.__10.ggOpacitiyActive=!flag;
+			me._button_1.style[domTransition]='none';
+			me._button_1.style.visibility='inherit';
+			me._button_1.ggVisible=true;
 		}
 		this.__10.onmouseover=function () {
 			me._tt_info5.style[domTransition]='none';
@@ -2156,33 +2186,6 @@ function object2vrSkin(player,base) {
 		this.__.setAttribute('style',hs);
 		this._container_2.appendChild(this.__);
 		this.divSkin.appendChild(this._container_2);
-		this._button_1=document.createElement('div');
-		this._button_1.ggId="Button 1";
-		this._button_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		this._button_1.ggVisible=true;
-		this._button_1.className='ggskin ggskin_button';
-		this._button_1.ggType='button';
-		hs ='position:absolute;';
-		hs+='left: 481px;';
-		hs+='top:  70px;';
-		hs+='width: 192px;';
-		hs+='height: 151px;';
-		hs+=cssPrefix + 'transform-origin: 50% 50%;';
-		hs+='visibility: inherit;';
-		hs+='cursor: pointer;';
-		this._button_1.setAttribute('style',hs);
-		this._button_1__img=document.createElement('img');
-		this._button_1__img.className='ggskin ggskin_button';
-		this._button_1__img.setAttribute('src',basePath + 'images/button_1.png');
-		this._button_1__img.setAttribute('style','position: absolute;top: 0px;left: 0px;-webkit-user-drag:none;');
-		this._button_1__img.className='ggskin ggskin_button';
-		this._button_1__img['ondragstart']=function() { return false; };
-		me.player.checkLoaded.push(this._button_1__img);
-		this._button_1.appendChild(this._button_1__img);
-		this._button_1.onclick=function () {
-			me.player.openUrl("https:\/\/www.jcstation3d.com\/","");
-		}
-		this.divSkin.appendChild(this._button_1);
 		this.divSkin.ggUpdateSize=function(w,h) {
 			me.updateSize(me.divSkin);
 		}
