@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Object2VR 3.1.9/10783
 // Filename: ??1.ggsk
-// Generated 周六 7月 9 13:28:38 2022
+// Generated 周四 7月 28 09:11:56 2022
 
 function object2vrSkin(player,base) {
 	var me=this;
@@ -315,7 +315,7 @@ function object2vrSkin(player,base) {
 		hs+='padding: 0px 1px 0px 1px;';
 		hs+='overflow: hidden;';
 		this._title__text.setAttribute('style',hs);
-		this._title.ggTextDiv.innerHTML="\u4ea7\u54c1\u5c55\u9500\u529f\u80fd\u6f14\u793a<br\/>\u65cb\u8f6c\/\u7f29\u653e\/\u6587\u672c\/\u52a8\u6001<br\/>\/\u6a21\u578b\/\u7f51\u5740\/\u6750\u8d28\/\u89c6\u9891<br\/>\/\u4f4d\u7f6e\/\u804a\u5929\/\u8d2d\u7269\/\u56fe\u7247<br\/>JCstation3D.com";
+		this._title.ggTextDiv.innerHTML="\u8fd9\u662f\u4e00\u4e2a\u5e7b\u60f3\u7684\u5e03\u6599\u5c55<br\/>\u793a\u903b\u8f91\uff0c\u4e3a\u9762\u6599\u5355\u72ec\u63d0<br\/>\u4f9b\u4ea4\u4e92\u548c\u5c55\u793a\u903b\u8f91\uff0c\u76ee<br\/>\u524d\u6ca1\u6709\u5546\u4e1a\u6210\u529f\u6848\u4f8b\uff0c<br\/>\u53ea\u662f\u4e00\u4e2aDemo\u3002";
 		this._title.appendChild(this._title__text);
 		this._userdata.appendChild(this._title);
 		this.divSkin.appendChild(this._userdata);
@@ -1649,13 +1649,10 @@ function object2vrSkin(player,base) {
 		this._autorotate2__img['ondragstart']=function() { return false; };
 		this._autorotate2.appendChild(this._autorotate2__img);
 		this._autorotate2.onclick=function () {
-			flag=(me._image_1.style.visibility=='hidden');
-			me._image_1.style[domTransition]='none';
-			me._image_1.style.visibility=flag?'inherit':'hidden';
-			me._image_1.ggVisible=flag;
-			me._button_1.style[domTransition]='none';
-			me._button_1.style.visibility='inherit';
-			me._button_1.ggVisible=true;
+			flag=(me._text_1.style.visibility=='hidden');
+			me._text_1.style[domTransition]='none';
+			me._text_1.style.visibility=flag?'inherit':'hidden';
+			me._text_1.ggVisible=flag;
 		}
 		this._autorotate2.onmouseover=function () {
 			me._tt_autorotate2.style[domTransition]='none';
@@ -2250,65 +2247,48 @@ function object2vrSkin(player,base) {
 		this.__.ggTextDiv.innerHTML="<iframe src=\"https:\/\/world.taobao.com\/\" width=\"1280px\" height=\"720px\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" frameborder=\"0\"><\/iframe>";
 		this.__.appendChild(this.____text);
 		this._container_3.appendChild(this.__);
-		this._image_1=document.createElement('div');
-		this._image_1.ggId="Image 1";
-		this._image_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		this._image_1.ggVisible=false;
-		this._image_1.className='ggskin ggskin_image';
-		this._image_1.ggType='image';
-		this._image_1.ggUpdatePosition=function() {
+		this._text_1=document.createElement('div');
+		this._text_1__text=document.createElement('div');
+		this._text_1.className='ggskin ggskin_textdiv';
+		this._text_1.ggTextDiv=this._text_1__text;
+		this._text_1.ggId="Text 1";
+		this._text_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		this._text_1.ggVisible=false;
+		this._text_1.className='ggskin ggskin_text';
+		this._text_1.ggType='text';
+		this._text_1.ggUpdatePosition=function() {
 			this.style[domTransition]='none';
 			if (this.parentNode) {
 				var w=this.parentNode.offsetWidth;
-				this.style.left=Math.floor(-337 + w/2) + 'px';
+				this.style.left=Math.floor(-464 + w/2) + 'px';
 				var h=this.parentNode.offsetHeight;
-				this.style.top=Math.floor(-382 + h/2) + 'px';
+				this.style.top=Math.floor(-423 + h/2) + 'px';
 			}
 		}
 		hs ='position:absolute;';
-		hs+='left: -337px;';
-		hs+='top:  -382px;';
-		hs+='width: 674px;';
-		hs+='height: 762px;';
+		hs+='left: -464px;';
+		hs+='top:  -423px;';
+		hs+='width: 921px;';
+		hs+='height: 857px;';
 		hs+=cssPrefix + 'transform-origin: 50% 50%;';
 		hs+='visibility: hidden;';
-		this._image_1.setAttribute('style',hs);
-		this._image_1__img=document.createElement('img');
-		this._image_1__img.className='ggskin ggskin_image';
-		this._image_1__img.setAttribute('src',basePath + 'images/image_1.png');
-		this._image_1__img.setAttribute('style','position: absolute;top: 0px;left: 0px;-webkit-user-drag:none;');
-		this._image_1__img.className='ggskin ggskin_image';
-		this._image_1__img['ondragstart']=function() { return false; };
-		me.player.checkLoaded.push(this._image_1__img);
-		this._image_1.appendChild(this._image_1__img);
-		this._button_1=document.createElement('div');
-		this._button_1.ggId="Button 1";
-		this._button_1.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		this._button_1.ggVisible=false;
-		this._button_1.className='ggskin ggskin_button';
-		this._button_1.ggType='button';
+		this._text_1.setAttribute('style',hs);
 		hs ='position:absolute;';
-		hs+='left: 190px;';
-		hs+='top:  463px;';
-		hs+='width: 192px;';
-		hs+='height: 151px;';
-		hs+=cssPrefix + 'transform-origin: 50% 50%;';
-		hs+='visibility: hidden;';
-		hs+='cursor: pointer;';
-		this._button_1.setAttribute('style',hs);
-		this._button_1__img=document.createElement('img');
-		this._button_1__img.className='ggskin ggskin_button';
-		this._button_1__img.setAttribute('src',basePath + 'images/button_1.png');
-		this._button_1__img.setAttribute('style','position: absolute;top: 0px;left: 0px;-webkit-user-drag:none;');
-		this._button_1__img.className='ggskin ggskin_button';
-		this._button_1__img['ondragstart']=function() { return false; };
-		me.player.checkLoaded.push(this._button_1__img);
-		this._button_1.appendChild(this._button_1__img);
-		this._button_1.onclick=function () {
-			me.player.openUrl("https:\/\/www.jcstation3d.com\/","");
-		}
-		this._image_1.appendChild(this._button_1);
-		this._container_3.appendChild(this._image_1);
+		hs+='left: 0px;';
+		hs+='top:  0px;';
+		hs+='width: 921px;';
+		hs+='height: 857px;';
+		hs+='border: 1px solid #000000;';
+		hs+='color: #000000;';
+		hs+='text-align: center;';
+		hs+='white-space: nowrap;';
+		hs+='padding: 0px 1px 0px 1px;';
+		hs+='overflow: hidden;';
+		hs+='overflow-y: auto;';
+		this._text_1__text.setAttribute('style',hs);
+		this._text_1.ggTextDiv.innerHTML="<iframe src=\"andrea.jpg\" width=\"924\" height=\"858\" frameborder=\"0\" allowfullscreen><\/iframe>";
+		this._text_1.appendChild(this._text_1__text);
+		this._container_3.appendChild(this._text_1);
 		this.divSkin.appendChild(this._container_3);
 		this.divSkin.ggUpdateSize=function(w,h) {
 			me.updateSize(me.divSkin);
