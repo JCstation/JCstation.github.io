@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour apprev="18105" start="node1" appversion="6.1.14">
+  <panorama id="node1">
+    <input leveltilesize="510" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 15:57" longitude="" nodeid="node1" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node2">
+    <input leveltilesize="510" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 15:14" longitude="" nodeid="node2" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node3">
+    <input leveltilesize="510" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 16:04" longitude="" nodeid="node3" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node4">
+    <input leveltilesize="510" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 16:09" longitude="" nodeid="node4" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node5">
+    <input leveltilesize="510" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 15:43" longitude="" nodeid="node5" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node6">
+    <input leveltilesize="510" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 16:57" longitude="" nodeid="node6" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node7">
+    <input leveltilesize="510" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 16:52" longitude="" nodeid="node7" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node8">
+    <input leveltilesize="510" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 16:55" longitude="" nodeid="node8" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node9">
+    <input leveltilesize="510" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 14:07" longitude="" nodeid="node9" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node10">
+    <input leveltilesize="510" leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 14:16" longitude="" nodeid="node10" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node11">
+    <input leveltilesize="510" leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 14:24" longitude="" nodeid="node11" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node12">
+    <input leveltilesize="510" leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 14:31" longitude="" nodeid="node12" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node13">
+    <input leveltilesize="510" leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 13:50" longitude="" nodeid="node13" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node14">
+    <input leveltilesize="510" leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 14:35" longitude="" nodeid="node14" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node15">
+    <input leveltilesize="510" leveltileurl="tiles/node15/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 10:52" longitude="" nodeid="node15" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node16">
+    <input leveltilesize="510" leveltileurl="tiles/node16/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 10:53" longitude="" nodeid="node16" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node17">
+    <input leveltilesize="510" leveltileurl="tiles/node17/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 10:53" longitude="" nodeid="node17" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node18">
+    <input leveltilesize="510" leveltileurl="tiles/node18/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 16:21" longitude="" nodeid="node18" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node19">
+    <input leveltilesize="510" leveltileurl="tiles/node19/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 16:28" longitude="" nodeid="node19" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node20">
+    <input leveltilesize="510" leveltileurl="tiles/node20/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 14:43" longitude="" nodeid="node20" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node21">
+    <input leveltilesize="510" leveltileurl="tiles/node21/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 14:53" longitude="" nodeid="node21" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <panorama id="node22">
+    <input leveltilesize="510" leveltileurl="tiles/node22/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingroll="0" levelbias="0.400" overlap="1" width="2500" height="2500" levelingpitch="0">
+      <level predecode="0" preload="0" width="2500" height="2500"/>
+      <level predecode="0" preload="0" width="1250" height="1250"/>
+      <level predecode="0" preload="0" width="625" height="625"/>
+      <level predecode="1" preload="1" width="312" height="312"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" pan="0" fov="70"/>
+      <flyin tilt="-90" projection="9" pan="0" fov="170"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovstereographic="270" tilt="90" pan="360" fovfisheye="360" scaletofit="1" fov="120"/>
+    </view>
+    <userdata heading="0" info="" comment="" tags="利华全景图" customnodeid="" source="" latitude="" title="" datetime="2023/1/16 17:30" longitude="" nodeid="node22" description="" author="" copyright=""/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label enabled="1" wordwrap="1" border="1" borderradius="1" backgroundalpha="1" bordercolor="0x000000" textalpha="1" textcolor="0x000000" background="1" width="180" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomafteroutfov="20" zoomout="0" blendcolor="0x000000" zoomafterinfov="90" enabled="1" zoomspeed="2" softedge="0" type="crossdissolve" zoomin="0" blendtime="1" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control contextfullscreen="1" contextvr="1" lockedmouse="0" invertwheel="0" dblclickfullscreen="0" lockedkeyboardzoom="0" sensitivity="8" invertcontrol="1" rubberband="0" speedwheel="1" contextprojections="0" lockedwheel="0" hideabout="0" lockedkeyboard="0" simulatemass="1"/>
+  </panorama>
+  <masternode>
+    <userdata heading="0" info="" comment="" tags="" customnodeid="" source="" latitude="" title="" datetime="" longitude="" nodeid="master" description="" author="" copyright=""/>
+  </masternode>
+</tour>
