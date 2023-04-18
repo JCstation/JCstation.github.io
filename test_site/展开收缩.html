@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>展开栏示例</title>
+	<style>
+		.category {
+			margin-bottom: 20px;
+		}
+
+		.category__title {
+			cursor: pointer;
+			font-weight: bold;
+			padding: 10px;
+			background-color: #eee;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+			transition: background-color .3s;
+		}
+
+		.category__title:hover {
+			background-color: #ddd;
+		}
+
+		.category__title::after {
+			content: '▶';
+			font-size: 12px;
+			margin-left: 10px;
+			transition: transform .3s;
+		}
+
+		.category__title--open::after {
+			transform: rotate(90deg);
+		}
+
+		.category__content {
+			display: none;
+			padding: 10px;
+			background-color: #f5f5f5;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+			transition: height .3s;
+		}
+
+		.category__content--open {
+			display: block;
+			height: auto;
+			margin-top: 10px;
+		}
+
+		.category__content--close {
+			height: 0;
+			overflow: hidden;
+			margin-top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="category">
+		<div class="category__title">
+			类别1
+		</div>
+		<div class="category__content category__content--close">
+			<p>内容1</p>
+			<p>内容2</p>
+			<p>内容3</p>
+		</div>
+	</div>
+
+	<div class="category">
+		<div class="category__title">
+			类别2
+		</div>
+		<div class="category__content category__content--close">
+			<p>内容4</p>
+			<p>内容5</p>
+			<p>内容6</p>
+		</div>
+	</div>
+
+	<script>
+		// 获取所有类别元素
+		const categories = document.querySelectorAll('.category');
+
+		// 给每个类别元素添加事件监听器
+		categories.forEach(category => {
+			const title = category.querySelector('.category__title');
+			const content = category.querySelector('.category__content');
+
+			title.addEventListener('click', () => {
+				// 切换类别内容的显示/隐藏状态
+				content.classList.toggle('category__content--open');
+				content.classList.toggle('category__content--close');
+
+				// 切换类别标题图标的方向
+				title.classList.toggle('category__title--open');
+			});
+		});
+	</script>
+</body>
+</html>

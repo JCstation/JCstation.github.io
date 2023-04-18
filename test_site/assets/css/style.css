@@ -30,20 +30,24 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 
+/* 设置默认行高 */
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+/* 设置加粗文本的字体 */
 b,
 strong {
   font-weight: bolder;
 }
 
+/* 去除图片边框 */
 img {
   border-style: none;
 }
 
+/* 设置页面背景色和字体等样式 */
 body {
   font-family: 'Roboto', 'sans-serif';
   background: #FFF;
@@ -53,9 +57,10 @@ body {
   color: #282828;
   margin: 0;
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* 设置一级标题样式 */
 h1 {
   font-size: 64px;
   line-height: 74px;
@@ -64,6 +69,7 @@ h1 {
   margin-block-end: 20px;
 }
 
+/* 设置三级标题样式 */
 h3 {
   font-size: 28px;
   line-height: 37px;
@@ -72,6 +78,7 @@ h3 {
   margin-block-end: 20px;
 }
 
+/* 设置四级标题样式 */
 h4 {
   font-size: 24px;
   line-height: 32px;
@@ -80,6 +87,7 @@ h4 {
   margin-block-end: 30px;
 }
 
+/* 设置五级标题样式 */
 h5 {
   font-size: 14px;
   line-height: 23px;
@@ -88,31 +96,38 @@ h5 {
   margin: 0;
 }
 
+/* 设置段落样式 */
 p {
   margin: 0;
 }
 
+/* 设置盒子的外边距 */
 .box {
   margin-bottom: 100px;
 }
 
+/* 设置描述的外边距 */
 .description {
   margin: 30px 0;
 }
 
+/* 设置产品展示区的样式 */
 .products {
   text-align: center;
 }
 
+/* 设置产品展示区的标题样式 */
 .products p {
   font-weight: 700;
   margin: 0 0 10px 0;
 }
 
+/* 设置产品展示区的图片样式 */
 .products img {
   margin-bottom: 10px;
 }
 
+/* 设置页面头部样式 */
 header {
   background: #000;
   height: 100px;
@@ -121,37 +136,68 @@ header {
   text-align: center;
 }
 
+/* 设置页头和页脚中的图片的宽度 */
 header img,
 footer img {
   width: 158px;
 }
 
-footer {
-  background: #000;
-  padding: 100px;
-  text-align: center;
-  margin-top: 120px;
-  color: #757575;
-  font-weight: 700;
-  font-size: 14px;
-}
 
-footer a {
-  color: #757575;
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-footer img {
-  margin-bottom: 30px;
-}
-
-.products {
-  text-align: center;
-  margin-top: 100px;
-}
-
+/* 设置图片最大宽度 */
 img {
   max-width: 100%;
 }
+
+.image-container {
+  margin-top: 150px; /* 修改元素顶部的外边距 */
+  width: 20%; /* 修改元素的宽度为父容器的宽度 */
+  height: auto; /* 自适应高度 */
+}
+#nav-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#nav-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-menu li {
+  margin-bottom: 10px;
+}
+
+#nav-menu a {
+  display: block;
+  padding: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+#nav-menu a:hover {
+  background-color: #f2f2f2;
+}
+#nav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
