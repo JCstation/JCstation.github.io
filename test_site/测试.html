@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <style>
+        .products {
+            margin: 0 -15px;
+        }
+
+        .product {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        <div class="row products">
+            <!-- Images will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var imageDir = "/assets/img/preview/概念设计/";
+            var fileExtension = ".png";
+            var targetDiv = $(".products");
+
+            // Get all images in the target directory with the file extension
+            $.ajax({
+                url: imageDir,
+                success: function (data) {
+                    $(data).find("a:contains(" + fileExtension + ")").each(function () {
+                        var fileName = $(this).attr("href").split("/").pop().split(".")[0];
+                        var imageUrl = imageDir + fileName + fileExtension;
+
+                        // Create HTML for each image and append it to the target div
+                        var html = '<div class="col-lg-4 col-md-12 product">';
+                        html += '<a href="' + imageUrl + '" data-fancybox="gallery" data-caption="' + fileName + '">';
+                        html += '<img src="' + imageUrl + '" />';
+                        html += '</a>';
+                        html += '<h5>' + '图案' + Math.floor(Math.random() * 1000) + '</h5>';
+                        html += '<h5>Real Size: 50 x 50 cm</h5>';
+                        html += '</div>';
+                        targetDiv.append(html);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

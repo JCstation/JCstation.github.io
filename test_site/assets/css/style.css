@@ -154,25 +154,30 @@ img {
   height: auto; /* 自适应高度 */
 }
 #nav-btn {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #333;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #007bff;
   color: #fff;
-  border: none;
-  border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
+  z-index: 9999;
+  border-radius: 50%; /* 让按钮呈现为圆形 */
+  /* 其他样式属性 */
+
 }
 
 #nav-menu {
-  display: none;
-  position: absolute;
-  top: 50px;
-  right: 20px;
+  position: fixed;
+  top: 50%;
+  right: 80px;
+  transform: translateY(-50%);
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 9999;
 }
 
 #nav-menu ul {
@@ -195,9 +200,5 @@ img {
 #nav-menu a:hover {
   background-color: #f2f2f2;
 }
-#nav-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
+
 
