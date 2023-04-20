@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>产品筛选器示例</title>
+	<style>
+		/* 隐藏所有产品项 */
+		.product-item {
+			display: none;
+		}
+
+		/* 显示被选中的产品项 */
+		.show {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div>
+  <label for="filter">Filter by:</label>
+  <select id="filter">
+    <option value="all">All</option>
+    <option value="category1">Category 1</option>
+    <option value="category2">Category 2</option>
+    <option value="category3">Category 3</option>
+  </select>
+</div>
+
+<ul id="products">
+  <li class="product" data-category="category1">Product 1</li>
+  <li class="product" data-category="category2">Product 2</li>
+  <li class="product" data-category="category3">Product 3</li>
+  <li class="product" data-category="category1">Product 4</li>
+  <li class="product" data-category="category2">Product 5</li>
+  <li class="product" data-category="category3">Product 6</li>
+</ul>
+
+	<script>
+		const filter = document.getElementById('filter');
+const products = document.getElementById('products').querySelectorAll('.product');
+
+filter.addEventListener('change', function(event) {
+  const category = event.target.value;
+
+  products.forEach(function(product) {
+    if (category === 'all' || product.dataset.category === category) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+});
+
+	</script>
+</body>
+</html>

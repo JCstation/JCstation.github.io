@@ -135,12 +135,10 @@ header {
   margin-bottom: 100px;
   text-align: center;
 }
-
 /* 设置页头和页脚中的图片的宽度 */
 header img,
 footer img {
-  width: 158px;
-}
+  width: 158px;}
 
 
 /* 设置图片最大宽度 */
