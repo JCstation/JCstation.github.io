@@ -1,0 +1,38 @@
+/* 设置全局样式 */
+body {
+  margin: 0;
+}
+
+/* 设置canvas元素的显示方式 */
+canvas {
+  display: block;
+}
+
+/* 容器样式 */
+#canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 3D画布样式 */
+#canvas-3d {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+}
+
+#canvas-2d {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  z-index: 2;
+}
+
+
+
+
