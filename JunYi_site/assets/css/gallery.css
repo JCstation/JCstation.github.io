@@ -16,7 +16,7 @@ body {
 
 .gallery-item img {
   width: auto;
-  height: 200px; /* 设置图片高度为 200px */
+  height: 800px; /* 设置图片高度为 200px */
 }
 
 .container {
@@ -28,11 +28,20 @@ body {
 
 .container img {
   object-fit: cover;
-  height: 200px; /* 设置图片高度为 200px */
+  height: 300px; /* 设置图片高度为 200px */
   width: auto;
   margin: 5px;
+  border-radius: 10px; /* 设置圆角半径为10px */
 }
 
 .hide-header #header {
   display: none; /* 隐藏头部 */
+}
+#lightgallery {
+  margin: 0 auto; /* 将图像容器水平居中 */
+  max-width: 1600px; /* 设置图像容器的最大宽度 */
+}
+.filter-buttons {
+  display: flex;
+  margin-left: 150px;
 }
