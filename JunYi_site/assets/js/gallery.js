@@ -3,28 +3,75 @@ document.addEventListener('DOMContentLoaded', function() {
   var images = Array.from(imageContainer.children); // 将图像元素转换为数组
 
   // 随机打乱数组顺序
-  images.sort(function(a, b) {
+  images.sort(function() {
     return Math.random() - 0.5;
-  });
-
-  // 清空图像容器
-  imageContainer.innerHTML = '';
-
-  // 重新将图像元素添加到容器中
-  images.forEach(function(image) {
-    imageContainer.appendChild(image);
   });
 
   // 设置每行的图像数量和容器宽度
   var imagesPerRow = 5;
   var containerWidth = (100 / imagesPerRow) + '%';
 
-  // 设置图像容器的宽度和水平居中对齐
+  // 清空图像容器
+  imageContainer.innerHTML = '';
+
+  // 重新将图像元素添加到容器中，并重新排列布局
   images.forEach(function(image) {
     var container = document.createElement('div');
     container.classList.add('image-container');
     container.style.width = containerWidth;
     container.appendChild(image);
     imageContainer.appendChild(container);
+  });
+
+  // 图像点击事件处理程序
+  images.forEach(function(image) {
+    image.addEventListener('click', function() {
+      // 隐藏页眉和页脚
+      var header = document.querySelector('header');
+      var footer = document.querySelector('footer');
+      header.style.display = 'none';
+      footer.style.display = 'none';
+
+      // 图像关闭事件处理程序
+      image.addEventListener('close', function() {
+        // 还原页眉和页脚的显示
+        header.style.display = '';
+        footer.style.display = '';
+      });
+    });
+  });
+
+  // 获取所有筛选按钮
+  var filterButtons = document.querySelectorAll('.filter-button');
+
+  // 筛选按钮的点击事件处理程序
+  filterButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      var filter = this.getAttribute('data-filter'); // 获取筛选条件
+
+      // 还原页眉和页脚的显示
+      var header = document.querySelector('header');
+      var footer = document.querySelector('footer');
+      header.style.display = '';
+      footer.style.display = '';
+
+      // 过滤图像元素，只显示符合筛选条件的图像
+      var filteredImages = images.filter(function(image) {
+        var imageFilter = image.getAttribute('data-filter');
+        return filter === 'all' || imageFilter === filter;
+      });
+
+      // 清空图像容器
+      imageContainer.innerHTML = '';
+
+      // 将筛选后的图像元素重新添加到容器中，并重新排列布局
+      filteredImages.forEach(function(image) {
+        var container = document.createElement('div');
+        container.classList.add('image-container');
+        container.style.width = containerWidth;
+        container.appendChild(image);
+        imageContainer.appendChild(container);
+      });
+    });
   });
 });

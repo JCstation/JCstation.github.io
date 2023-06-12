@@ -22,18 +22,24 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* 左对齐容器中的内容 */
-  max-width: 1980px; /* 设置容器的最大宽度为 1980px */
+  justify-content: flex-start;
+}
+
+.container a {
+  flex: 0 0 25%; /* 控制每个图片占据的宽度，这里是四列布局，每列占据25%的宽度 */
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .container img {
+  width: 100%;
+  height: 300px;
   object-fit: cover;
-  height: 300px; /* 设置图片高度为 200px */
-  width: auto;
-  margin: 5px;
-  border-radius: 10px; /* 设置圆角半径为10px */
 }
 
+.container a:hover img {
+  border: 2px solid gray;
+}
 .hide-header #header {
   display: none; /* 隐藏头部 */
 }
@@ -43,5 +49,17 @@ body {
 }
 .filter-buttons {
   display: flex;
-  margin-left: 150px;
+  margin-left: 160px;
+}
+.pdf-section {
+  clear: both;
+}
+
+.pdf-section h4 {
+  float: left;
+  margin-right: 10px;
+}
+
+.pdf-section a {
+  float: left;
 }
