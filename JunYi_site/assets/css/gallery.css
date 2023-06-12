@@ -1,0 +1,38 @@
+body {
+  padding: 40px;
+  background-image: linear-gradient(#e8f0ff 0%, white 52.08%); /* 设置背景渐变色 */
+  color: #0e3481;
+  min-height: 100vh; /* 设置最小高度为视口高度 */
+}
+
+.header .lead {
+  max-width: 620px; /* 设置最大宽度为 620px */
+}
+
+.gallery-item {
+  width: 200px;
+  padding: 5px;
+}
+
+.gallery-item img {
+  width: auto;
+  height: 200px; /* 设置图片高度为 200px */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* 左对齐容器中的内容 */
+  max-width: 1980px; /* 设置容器的最大宽度为 1980px */
+}
+
+.container img {
+  object-fit: cover;
+  height: 200px; /* 设置图片高度为 200px */
+  width: auto;
+  margin: 5px;
+}
+
+.hide-header #header {
+  display: none; /* 隐藏头部 */
+}
