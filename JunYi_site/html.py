@@ -1,13 +1,8 @@
 import os
 import random
-import string
-
-def generate_random_name():
-    digits = string.digits
-    return ''.join(random.choice(digits) for _ in range(6))
 
 def generate_html_image_paths(folder_path):
-    html_template = '<a href="{image_path}" data-filter="{data_filter}"><img data-src="{image_path}" alt="{image_alt}"></a>'
+    html_template = '<a href="{image_path}" data-filter="{data_filter}"><img src="{image_path}" alt="{image_alt}"></a>'
 
     image_paths = []
     image_extensions = ('.png', '.jpg', '.jpeg', '.gif', '.bmp')  # 常见图像文件扩展名
@@ -15,8 +10,8 @@ def generate_html_image_paths(folder_path):
     for root, dirs, files in os.walk(folder_path):
         for file in files:
             if file.lower().endswith(image_extensions):
-                image_name = generate_random_name() + os.path.splitext(file)[1]
-                image_alt = os.path.splitext(file)[0]
+                image_name = file
+                image_alt = "00" + str(random.randint(0, 999998)).zfill(6)  # 生成以 "00" 开头的六位随机数字作为 alt 属性的值
                 data_filter = os.path.relpath(root, folder_path)
                 image_path = os.path.join("assets", "img", "preview", "fulls", data_filter, image_name).replace("\\", "/")
                 html_path = html_template.format(image_path=image_path, data_filter=data_filter, image_alt=image_alt)

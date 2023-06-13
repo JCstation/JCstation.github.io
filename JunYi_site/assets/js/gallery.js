@@ -90,3 +90,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+  // 获取所有带有延迟加载属性的图像
+  const lazyImages = document.querySelectorAll('img[data-src]');
+
+  // Intersection Observer 配置选项
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  // Intersection Observer 回调函数
+  function lazyLoadImage(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        observer.unobserve(img);
+      }
+    });
+  }
+
+  // 创建 Intersection Observer 实例
+  const observer = new IntersectionObserver(lazyLoadImage, options);
+
+  // 监听所有带有延迟加载属性的图像
+  lazyImages.forEach(image => {
+    observer.observe(image);
+  });
