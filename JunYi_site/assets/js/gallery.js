@@ -49,6 +49,11 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       var filter = this.getAttribute('data-filter'); // 获取筛选条件
 
+      // 过滤掉 "VRstore" 的图像
+      var filteredImages = images.filter(function(image) {
+        return image.getAttribute('data-filter') !== 'VRstore';
+      });
+      
       // 还原页眉和页脚的显示
       var header = document.querySelector('header');
       var footer = document.querySelector('footer');
@@ -56,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
       footer.style.display = '';
 
       // 过滤图像元素，只显示符合筛选条件的图像
-      var filteredImages = images.filter(function(image) {
+      filteredImages = filteredImages.filter(function(image) {
         var imageFilter = image.getAttribute('data-filter');
         return filter === 'all' || imageFilter === filter;
       });
@@ -72,6 +77,16 @@ document.addEventListener('DOMContentLoaded', function() {
         container.appendChild(image);
         imageContainer.appendChild(container);
       });
+
+      // 获取容器
+      var matterportContainer = document.querySelector('.matterport-container');
+
+      // 根据筛选条件显示或隐藏容器
+      if (filter === 'VRstore') {
+        matterportContainer.style.display = 'block';
+      } else {
+        matterportContainer.style.display = 'none';
+      }
     });
   });
 });
