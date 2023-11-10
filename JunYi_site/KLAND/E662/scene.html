@@ -7,8 +7,16 @@
         body {
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        canvas {
+        a {
+            width: 100%;
+            max-width: 400px; /* 调整最大宽度以适应你的布局需求 */
+            margin: 20px;
+        }
+        img {
             width: 100%;
             height: auto;
         }
@@ -16,8 +24,14 @@
     <script src="https://viewer.marmoset.co/main/marmoset.js"></script>
 </head>
 <body>
-    <script>
-        marmoset.embed('scene.mview', { autoStart: true, fullFrame: true, pagePreset: false });
-    </script>
+    <a href="scene.html" target="viewerframe">
+        <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw" data-orig-src="scene1.png" >
+    </a>
+    <a href="scene2.html" target="viewerframe">
+        <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw" data-orig-src="scene2.png" >
+    </a>
+    <a href="scene3.html" target="viewerframe">
+        <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw" data-orig-src="scene3.png" >
+    </a>
 </body>
 </html>
