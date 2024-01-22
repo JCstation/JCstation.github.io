@@ -21,16 +21,10 @@ def generate_html_image_paths(folder_path):
 
 def save_html_file(image_paths, output_file):
     with open(output_file, 'w', encoding='utf-8') as f:
-        f.write('<html>\n')
-        f.write('<body>\n')
-
         for path in image_paths:
             f.write(path + '\n')
 
-        f.write('</body>\n')
-        f.write('</html>\n')
-
-folder_path = r"B:\JCstation.github.io\JunYi_site\assets\img\preview\fulls"  # 图像文件夹路径
+folder_path = r"F:\代码\JCstation.github.io\JunYi_site\Gentry\assets\img\preview\fulls"  # 图像文件夹路径
 output_file = "image_paths.html"  # 输出HTML文件路径
 
 image_paths = generate_html_image_paths(folder_path)
