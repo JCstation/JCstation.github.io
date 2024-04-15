@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Object2VR 3.1.9/10783
 // Filename: JC.ggsk
-// Generated 周二 4月 16 04:45:59 2024
+// Generated 周二 4月 16 04:58:57 2024
 
 function object2vrSkin(player,base) {
 	var me=this;
@@ -421,7 +421,7 @@ function object2vrSkin(player,base) {
 		hs+='padding: 0px 1px 0px 1px;';
 		hs+='overflow: hidden;';
 		this._text_1__text.setAttribute('style',hs);
-		this._text_1.ggTextDiv.innerHTML="\u5355\u51fb\/\u53cc\u51fb";
+		this._text_1.ggTextDiv.innerHTML="\u5207\u6362\u989c\u8272";
 		this._text_1.appendChild(this._text_1__text);
 		this._svg_3.appendChild(this._text_1);
 		this._toolbar.appendChild(this._svg_3);
