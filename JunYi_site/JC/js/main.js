@@ -1,11 +1,3 @@
-/* ===================================
---------------------------------------
-	Tulen | Photography HTML Template
-	Version: 1.0
---------------------------------------
-======================================*/
-
-
 'use strict';
 
 $(window).on('load', function() {
@@ -191,3 +183,45 @@ $(window).on('load', function() {
 
 })(jQuery);
 
+$(document).ready(function() {
+    // JSON 文件的路径
+    const jsonFilePath = 'img/gallery/images.json'; // 替换为实际路径
+
+    // 使用 jQuery 的 getJSON 方法获取 JSON 文件中的数据
+    $.getJSON(jsonFilePath)
+    .done(function(data) {
+        // 当 JSON 数据加载成功时执行
+        console.log("JSON 数据加载成功:", data);
+
+        // 获取画廊容器元素
+        const $galleryWarp = $('.gallery-warp');
+        
+        // 清空画廊容器中的内容，以避免重复插入
+        $galleryWarp.empty();
+
+        // 遍历 JSON 数据数组
+        data.forEach(item => {
+            // 为每个数据项创建对应的 HTML 结构
+            const html = `
+                <div class="gallery-item ${item.category}">
+                    <a class="fresco" href="${item.image}" data-fresco-group="projects">
+                        <img src="${item.image}" alt="">
+                    </a>
+                    <div class="gi-hover">
+                        <img src="${item.authorImage}" alt="">
+                        <h6>${item.authorName}</h6>
+                    </div>
+                </div>
+            `;
+            // 将生成的 HTML 结构插入到画廊容器中
+            $galleryWarp.append(html);
+        }
+		);
+
+    }
+	)
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        // 当 JSON 数据加载失败时执行
+        console.error("JSON 数据加载失败:", textStatus, errorThrown);
+    });
+});
