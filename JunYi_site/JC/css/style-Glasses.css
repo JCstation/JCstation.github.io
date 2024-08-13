@@ -1,0 +1,296 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i&display=swap");
+
+
+html,
+body {
+	height: 100%;
+	font-family: "Montserrat", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	padding-left: 10px;
+}
+
+@media (max-width: 420px) {
+	body {
+		padding-left: 10px;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+/*------------------
+   Gallery page
+ ------------------*/
+
+.gallery-section {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	padding-top: 90px;
+}
+
+.gallery-section .gallery-warp {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 576px) {
+	.gallery-section {
+		padding-top: 0;
+		height: auto;
+	}
+}
+
+.nice-scroll {
+	height: 100%;
+	overflow: hidden;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 576px) {
+	.nice-scroll {
+		overflow: inherit;
+	}
+}
+
+.gallery-header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	padding-top: 30px;
+	padding-right: 74px;
+	padding-left: 10px;
+	z-index: 99;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px),
+only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 576px) {
+	.gallery-header {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 576px) {
+	.gallery-header {
+		position: relative;
+		padding-bottom: 20px;
+	}
+}
+
+.gallery-header h4 {
+	float: left;
+	margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 576px) {
+	.gallery-header h4 {
+		margin-bottom: 20px;
+		float: none;
+	}
+}
+
+.gallery-filter  {
+	list-style: none;
+	float: right;
+	position: relative; /* 确保父元素具有定位 */
+	padding: 10px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 576px) {
+	.gallery-filter .sub-menu{
+		float: none;
+	}
+}
+
+.gallery-filter li {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 500;
+	color: #252525;
+	margin-left: 35px;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.gallery-filter li {
+		margin-left: 20px;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 576px) {
+	.gallery-filter li {
+		margin-left: 0;
+		margin-right: 15px;
+		font-size: 16px;
+	}
+}
+
+.gallery-filter li.active {
+	color: #2916e0;
+}
+
+.grid-sizer,
+.gallery-item {
+	width: 20%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.grid-sizer,
+	.gallery-item {
+		width: 25%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px) {
+	.grid-sizer,
+	.gallery-item {
+		width: 50%;
+	}
+}
+
+@media (max-width: 576px) {
+	.grid-sizer,
+	.gallery-item {
+		width: 100%;
+	}
+}
+
+.gallery-item {
+	padding: 0 5px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.gallery-item .gi-hover {
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.gallery-item .gi-hover img {
+	display: inline-block;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	margin-right: 6px;
+}
+
+.gallery-item .gi-hover h6 {
+	padding-top: 5px;
+	display: inline-block;
+	color: #fff;
+	position: relative;
+	top: 2px;
+}
+
+.gallery-item a {
+	display: block;
+	position: relative;
+}
+
+.gallery-item a:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	left: 0;
+	bottom: 0;
+	background: black;
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8211659664)), color-stop(94%, rgba(0, 0, 0, 0)));
+	background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8211659664) 0%, rgba(0, 0, 0, 0) 94%);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8211659664) 0%, rgba(0, 0, 0, 0) 94%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.gallery-item a img {
+	min-width: 100%;
+}
+
+.gallery-item:hover .gi-hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.gallery-item:hover a:after {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.gallery-item.gi-big {
+	width: 40%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px),
+only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px) {
+	.gallery-item.gi-big {
+		width: 50%;
+	}
+}
+
+@media (max-width: 576px) {
+	.gallery-item.gi-big {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px),
+only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px) {
+	.gallery-item.gi-long {
+		width: 50%;
+	}
+}
+
+@media (max-width: 576px) {
+	.gallery-item.gi-long {
+		width: 100%;
+	}
+}
+
+.fr-position-outside {
+	left: 0;
+	top: 0;
+	right: auto;
+	bottom: auto;
+}
+
+.fr-position-text {
+	color: #fff;
+}
+
+.fr-window-skin-fresco.fr-window-ui-outside .fr-close-background,
+.fr-window-skin-fresco.fr-window-ui-outside .fr-close:hover .fr-close-background {
+	background-color: transparent;
+}
+
+.fr-thumbnail-active {
+	border: 2px solid #2916e0;
+}
+
