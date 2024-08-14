@@ -1,0 +1,6 @@
+[
+    {"url": "img/gallery/1.jpg", "category": "featured", "author": "Arthur Rose"},
+    {"url": "img/gallery/2.jpg", "category": "people", "author": "Arthur Rose"},
+    {"url": "img/gallery/3.jpg", "category": "nature", "author": "Arthur Rose"},
+    // 添加更多图片信息
+]
