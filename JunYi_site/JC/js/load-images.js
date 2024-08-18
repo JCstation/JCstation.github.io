@@ -1,39 +1,34 @@
 $(document).ready(function() {
-    // 图片数据（你可以从服务器动态加载这些数据）
-    const images = [
-        { src: 'img/gallery/1.jpg', category: 'featured', author: 'Arthur Rose' },
-        { src: 'img/gallery/2.jpg', category: 'people', author: 'Arthur Rose' },
-        { src: 'img/gallery/3.jpg', category: 'nature', author: 'Arthur Rose' },
-        { src: 'img/gallery/4.jpg', category: 'travel', author: 'Arthur Rose' },
-        { src: 'img/gallery/5.jpg', category: 'featured', author: 'Arthur Rose' },
-        { src: 'img/gallery/6.jpg', category: 'animal', author: 'Arthur Rose' },
-        { src: 'img/gallery/7.jpg', category: 'travel', author: 'Arthur Rose' },
-        { src: 'img/gallery/8.jpg', category: 'people', author: 'Arthur Rose' },
-        { src: 'img/gallery/9.jpg', category: 'animal', author: 'Arthur Rose' },
-        { src: 'img/gallery/10.jpg', category: 'travel', author: 'Arthur Rose' },
-        { src: 'img/gallery/11.jpg', category: 'featured', author: 'Arthur Rose' }
-    ];
+    // 定义图片文件夹
+    const folders = ['Sports','Goggles','Running','Fishing','sunglasses',];  // 你可以根据需要添加更多文件夹
 
     const galleryWarp = $('.gallery-warp');
 
-    images.forEach(image => {
-        const galleryItem = $(`
-            <div class="gallery-item ${image.category}">
-                <a class="fresco" href="${image.src}" data-fresco-group="projects">
-                    <img src="${image.src}" alt="">
-                </a>
-                <div class="gi-hover">
-                    <img src="img/gallery/author.jpg" alt="">
-                    <h6>${image.author}</h6>
-                </div>
-            </div>
-        `);
-        galleryWarp.append(galleryItem);
+    folders.forEach(folder => {
+        $.getJSON(`img/gallery/${folder}/images.json`, function(images) {
+            images.forEach(image => {
+                const galleryItem = $(`
+                    <div class="gallery-item ${image.category}">
+                        <a class="fresco" href="img/gallery/${folder}/${image.src}" data-fresco-group="projects">
+                            <img src="img/gallery/${folder}/${image.src}" alt="">
+                        </a>
+                        <div class="gi-hover">
+                            <img src="img/gallery/author.jpg" alt="">
+                            <h6>${image.author}</h6>
+                        </div>
+                    </div>
+                `);
+                galleryWarp.append(galleryItem);
+            });
+
+            // 在每次加载完一个文件夹的图片后初始化或刷新Isotope和Fresco
+            galleryWarp.isotope('appended', galleryWarp.children('.gallery-item'));
+            $('.fresco').fresco();
+        });
     });
 
-    // 初始化插件
-    $('.fresco').fresco();
-    $('.gallery-warp').isotope({
+    // 初始化Isotope
+    galleryWarp.isotope({
         itemSelector: '.gallery-item',
         layoutMode: 'fitRows'
     });
@@ -41,7 +36,7 @@ $(document).ready(function() {
     // 绑定过滤器
     $('.gallery-filter').on('click', 'li', function() {
         const filterValue = $(this).attr('data-filter');
-        $('.gallery-warp').isotope({ filter: filterValue });
+        galleryWarp.isotope({ filter: filterValue });
         $(this).addClass('active').siblings().removeClass('active');
     });
 });
