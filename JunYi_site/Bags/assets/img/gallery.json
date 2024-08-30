@@ -1,252 +1,26 @@
 [
     {
         "folder": "Backpack",
-        "src": "assets/img/Backpack/00000-4074820472.png",
-        "title": "00000-4074820472"
+        "src": "assets/img/Backpack/00000-4074820472/00000-4074820472.png",
+        "threeDLink": "assets/img/Backpack/3D/scene.html",
+        "galleryLink": [
+            "assets/img/Backpack/00000-4074820472/详情/00001-4074820472.png"
+        ]
     },
     {
         "folder": "Backpack",
-        "src": "assets/img/Backpack/00001-4074820472.png",
-        "title": "00001-4074820472"
+        "src": "assets/img/Backpack/00001-4074820472/00001-4074820472.png",
+        "threeDLink": "assets/img/Backpack/3D/scene.html",
+        "galleryLink": [
+            "assets/img/Backpack/00001-4074820472/详情/00001-4074820472.png"
+        ]
     },
     {
         "folder": "Backpack",
-        "src": "assets/img/Backpack/00002-4074820472.png",
-        "title": "00002-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00004-4074820472.png",
-        "title": "00004-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00005-4074820472.png",
-        "title": "00005-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00006-4074820472.png",
-        "title": "00006-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00007-4074820472.png",
-        "title": "00007-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00008-4074820472.png",
-        "title": "00008-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00009-4074820472.png",
-        "title": "00009-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00010-4074820472.png",
-        "title": "00010-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00011-4074820472.png",
-        "title": "00011-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00012-4074820472.png",
-        "title": "00012-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00013-4074820472.png",
-        "title": "00013-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00014-4074820472.png",
-        "title": "00014-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00015-4074820472.png",
-        "title": "00015-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00017-4074820472.png",
-        "title": "00017-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00018-4074820472.png",
-        "title": "00018-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00019-4074820472.png",
-        "title": "00019-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00020-4074820472.png",
-        "title": "00020-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00021-4074820472.png",
-        "title": "00021-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00022-4074820472.png",
-        "title": "00022-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00023-4074820472.png",
-        "title": "00023-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00024-4074820472.png",
-        "title": "00024-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00025-4074820472.png",
-        "title": "00025-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00026-4074820472.png",
-        "title": "00026-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00027-4074820472.png",
-        "title": "00027-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00028-4074820472.png",
-        "title": "00028-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00029-4074820472.png",
-        "title": "00029-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00030-4074820472.png",
-        "title": "00030-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00031-4074820472.png",
-        "title": "00031-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00032-4074820472.png",
-        "title": "00032-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00033-4074820472.png",
-        "title": "00033-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00034-4074820472.png",
-        "title": "00034-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00035-4074820472.png",
-        "title": "00035-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00036-4074820472.png",
-        "title": "00036-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00037-4074820472.png",
-        "title": "00037-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00038-4074820472.png",
-        "title": "00038-4074820472"
-    },
-    {
-        "folder": "Backpack",
-        "src": "assets/img/Backpack/00039-4074820472.png",
-        "title": "00039-4074820472"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00000-97603049.png",
-        "title": "00000-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00001-97603049.png",
-        "title": "00001-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00002-97603049.png",
-        "title": "00002-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00003-97603049.png",
-        "title": "00003-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00004-97603049.png",
-        "title": "00004-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00005-97603049.png",
-        "title": "00005-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00006-97603049.png",
-        "title": "00006-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00007-97603049.png",
-        "title": "00007-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00008-97603049.png",
-        "title": "00008-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00009-97603049.png",
-        "title": "00009-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00010-97603049.png",
-        "title": "00010-97603049"
-    },
-    {
-        "folder": "Shoulder",
-        "src": "assets/img/Shoulder/00011-97603049.png",
-        "title": "00011-97603049"
+        "src": "assets/img/Backpack/00002-4074820472/00002-4074820472.png",
+        "threeDLink": "assets/img/Backpack/3D/scene.html",
+        "galleryLink": [
+            "assets/img/Backpack/00002-4074820472/详情/00001-4074820472.png"
+        ]
     }
 ]

@@ -51,91 +51,105 @@
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
+
+/* 滚动到顶部按钮的样式 */
 .scroll-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-  background-color: var(--accent-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
+  position: fixed; /* 固定定位 */
+  visibility: hidden; /* 初始状态为隐藏 */
+  opacity: 0; /* 初始透明度为0 */
+  right: 15px; /* 右侧距离 */
+  bottom: 15px; /* 底部距离 */
+  z-index: 99999; /* 层级，确保在最上层 */
+  background-color: var(--accent-color); /* 背景颜色 */
+  width: 40px; /* 宽度 */
+  height: 40px; /* 高度 */
+  border-radius: 4px; /* 圆角边框 */
+  transition: all 0.4s; /* 过渡效果 */
 }
 
+/* 滚动到顶部按钮中图标的样式 */
 .scroll-top i {
-  font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
+  font-size: 24px; /* 图标字体大小 */
+  color: var(--contrast-color); /* 图标颜色 */
+  line-height: 0; /* 行高为0 */
 }
 
+/* 鼠标悬停时的按钮样式 */
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%); /* 鼠标悬停时背景颜色 */
+  color: var(--contrast-color); /* 鼠标悬停时字体颜色 */
 }
 
+/* 当按钮处于活动状态时的样式 */
 .scroll-top.active {
-  visibility: visible;
-  opacity: 1;
+  visibility: visible; /* 显示按钮 */
+  opacity: 1; /* 透明度为1 */
 }
 
 
 /*--------------------------------------------------------------
 # 主题
 --------------------------------------------------------------*/
+
+/* section 和 .section 的样式 */
 section,
 .section {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
-  scroll-margin-top: 98px;
-  overflow: clip;
+  color: var(--default-color); /* 字体颜色 */
+  background-color: var(--background-color); /* 背景颜色 */
+  padding: 60px 0; /* 上下内边距 */
+  scroll-margin-top: 98px; /* 滚动时的顶部外边距 */
+  overflow: clip; /* 溢出内容裁剪 */
 }
 
+/* 小屏幕设备（最大宽度为1199px）下的样式 */
 @media (max-width: 1199px) {
-
   section,
   .section {
-    scroll-margin-top: 64px;
+    scroll-margin-top: 64px; /* 滚动时的顶部外边距减少 */
   }
 }
 
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
+
+/* 全局部分标题的样式 */
 .section-title {
-  text-align: center;
-  padding-bottom: 60px;
-  position: relative;
+  text-align: center; /* 文本居中对齐 */
+  padding-bottom: 60px; /* 底部内边距 */
+  position: relative; /* 相对定位 */
 }
 
+/* 全局部分标题 h2 的样式 */
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
-  position: relative;
+  font-size: 32px; /* 字体大小 */
+  font-weight: 700; /* 字体粗细 */
+  position: relative; /* 相对定位 */
 }
 
+/* 全局部分标题 h2 的伪元素样式 */
 .section-title h2:before,
 .section-title h2:after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background: var(--accent-color);
-  display: inline-block;
+  content: ""; /* 伪元素内容为空 */
+  width: 50px; /* 宽度 */
+  height: 2px; /* 高度 */
+  background: var(--accent-color); /* 背景颜色 */
+  display: inline-block; /* 显示为行内块级元素 */
 }
 
+/* h2 标题前的装饰线样式 */
 .section-title h2:before {
-  margin: 0 15px 10px 0;
+  margin: 0 15px 10px 0; /* 外边距 */
 }
 
+/* h2 标题后的装饰线样式 */
 .section-title h2:after {
-  margin: 0 0 10px 15px;
+  margin: 0 0 10px 15px; /* 外边距 */
 }
 
+/* 全局部分标题段落的样式 */
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 0; /* 底部外边距为0 */
 }
 
 
@@ -145,102 +159,117 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+/* 作品集过滤器样式 */
 .portfolio .portfolio-filters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
+  padding: 0; /* 内边距为0 */
+  margin: 0 auto 20px auto; /* 上下外边距为0，左右居中，底部外边距为20px */
+  list-style: none; /* 去掉列表项的默认样式 */
+  text-align: center; /* 文本居中对齐 */
 }
 
+/* 作品集过滤器每个列表项的样式 */
 .portfolio .portfolio-filters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 20px 10px 20px;
-  margin: 0;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 5px;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  font-family: var(--heading-font);
+  cursor: pointer; /* 鼠标悬停时显示为手型 */
+  display: inline-block; /* 使列表项横向排列 */
+  padding: 8px 20px 10px 20px; /* 上下左右内边距 */
+  margin: 0; /* 外边距为0 */
+  font-size: 15px; /* 字体大小 */
+  font-weight: 500; /* 字体粗细 */
+  line-height: 1; /* 行高 */
+  margin-bottom: 5px; /* 底部外边距 */
+  border-radius: 50px; /* 圆角边框 */
+  transition: all 0.3s ease-in-out; /* 过渡效果 */
+  font-family: var(--heading-font); /* 使用自定义字体 */
 }
 
+/* 鼠标悬停或选中的过滤器项的样式 */
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
+  color: var(--contrast-color); /* 字体颜色 */
+  background-color: var(--accent-color); /* 背景颜色 */
 }
 
+/* 过滤器列表的第一个项的样式 */
 .portfolio .portfolio-filters li:first-child {
-  margin-left: 0;
+  margin-left: 0; /* 左外边距为0 */
 }
 
+/* 过滤器列表的最后一个项的样式 */
 .portfolio .portfolio-filters li:last-child {
-  margin-right: 0;
+  margin-right: 0; /* 右外边距为0 */
 }
 
+/* 小屏幕设备（最大宽度为575px）下的样式 */
 @media (max-width: 575px) {
   .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 0 10px 0;
+    font-size: 14px; /* 字体大小 */
+    margin: 0 0 10px 0; /* 上下外边距，底部外边距为10px */
   }
 }
 
+/* 作品集项的样式 */
 .portfolio .portfolio-item {
-  position: relative;
-  overflow: hidden;
+  position: relative; /* 相对定位 */
+  overflow: hidden; /* 隐藏超出部分 */
 }
 
+/* 作品集项信息的样式 */
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: -100%;
-  z-index: 3;
-  transition: all ease-in-out 0.5s;
-  background: color-mix(in srgb, var(--background-color), transparent 10%);
-  padding: 15px;
+  opacity: 0; /* 初始透明度为0 */
+  position: absolute; /* 绝对定位 */
+  left: 12px; /* 左侧距离 */
+  right: 12px; /* 右侧距离 */
+  bottom: -100%; /* 初始位置在底部外面 */
+  z-index: 3; /* 层级 */
+  transition: all ease-in-out 0.5s; /* 过渡效果 */
+  background: color-mix(in srgb, var(--background-color), transparent 10%); /* 背景颜色混合 */
+  padding: 15px; /* 内边距 */
 }
 
+/* 作品集项信息标题的样式 */
 .portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  font-weight: 600;
-  padding-right: 50px;
+  font-size: 18px; /* 字体大小 */
+  font-weight: 600; /* 字体粗细 */
+  padding-right: 50px; /* 右侧内边距 */
 }
 
+/* 作品集项信息描述的样式 */
 .portfolio .portfolio-item .portfolio-info p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-size: 14px;
-  margin-bottom: 0;
-  padding-right: 50px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%); /* 字体颜色混合 */
+  font-size: 14px; /* 字体大小 */
+  margin-bottom: 0; /* 底部外边距为0 */
+  padding-right: 50px; /* 右侧内边距 */
 }
 
+/* 作品集项信息中预览链接和详情链接的样式 */
 .portfolio .portfolio-item .portfolio-info .preview-link,
 .portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 50px;
-  font-size: 24px;
-  top: calc(50% - 14px);
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  transition: 0.3s;
-  line-height: 0;
+  position: absolute; /* 绝对定位 */
+  right: 50px; /* 右侧距离 */
+  font-size: 24px; /* 字体大小 */
+  top: calc(50% - 14px); /* 垂直居中 */
+  color: color-mix(in srgb, var(--default-color), transparent 30%); /* 字体颜色混合 */
+  transition: 0.3s; /* 过渡效果 */
+  line-height: 0; /* 行高为0 */
 }
 
+/* 鼠标悬停时预览链接和详情链接的样式 */
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: var(--accent-color);
+  color: var(--accent-color); /* 鼠标悬停时字体颜色 */
 }
 
+/* 详情链接的样式 */
 .portfolio .portfolio-item .portfolio-info .details-link {
-  right: 14px;
-  font-size: 28px;
+  right: 14px; /* 右侧距离 */
+  font-size: 28px; /* 字体大小 */
 }
 
+/* 鼠标悬停在作品集项上时的信息样式 */
 .portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
-  bottom: 0;
+  opacity: 1; /* 透明度变为1 */
+  bottom: 0; /* 位置回到正常 */
 }
 
 
@@ -252,181 +281,197 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
+
+/* 作品集详情部分的图片样式 */
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 100%; /* 图片宽度占满100% */
 }
 
+/* Swiper 组件的包装器样式 */
 .portfolio-details .swiper-wrapper {
-  height: auto;
+  height: auto; /* 高度自适应 */
 }
 
+/* Swiper 组件的上一页和下一页按钮样式 */
 .portfolio-details .swiper-button-prev,
 .portfolio-details .swiper-button-next {
-  width: 48px;
-  height: 48px;
+  width: 48px; /* 按钮宽度 */
+  height: 48px; /* 按钮高度 */
 }
 
+/* Swiper 按钮的伪元素样式 */
 .portfolio-details .swiper-button-prev:after,
 .portfolio-details .swiper-button-next:after {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.15);
-  font-size: 24px;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.8); /* 字体颜色 */
+  background-color: rgba(0, 0, 0, 0.15); /* 背景颜色 */
+  font-size: 24px; /* 字体大小 */
+  border-radius: 50%; /* 圆形边框 */
+  width: 48px; /* 按钮宽度 */
+  height: 48px; /* 按钮高度 */
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: center; /* 水平居中对齐 */
+  transition: 0.3s; /* 过渡效果 */
 }
 
+/* 鼠标悬停时的按钮样式 */
 .portfolio-details .swiper-button-prev:hover:after,
 .portfolio-details .swiper-button-next:hover:after {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3); /* 鼠标悬停时背景颜色 */
 }
 
+/* 小屏幕设备（最大宽度为575px）下的按钮样式 */
 @media (max-width: 575px) {
-
   .portfolio-details .swiper-button-prev,
   .portfolio-details .swiper-button-next {
-    display: none;
+    display: none; /* 隐藏按钮 */
   }
 }
 
+/* Swiper 组件的分页器样式 */
 .portfolio-details .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
+  margin-top: 20px; /* 上外边距 */
+  position: relative; /* 相对定位 */
 }
 
+/* Swiper 分页器的每个小圆点样式 */
 .portfolio-details .swiper-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
+  width: 10px; /* 小圆点宽度 */
+  height: 10px; /* 小圆点高度 */
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%); /* 背景颜色混合 */
+  opacity: 1; /* 不透明度 */
 }
 
+/* 当前激活的小圆点样式 */
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color); /* 激活状态背景颜色 */
 }
 
+/* 作品集详情信息标题的样式 */
 .portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
+  font-size: 22px; /* 字体大小 */
+  font-weight: 700; /* 字体粗细 */
+  margin-bottom: 20px; /* 底部外边距 */
+  padding-bottom: 20px; /* 底部内边距 */
+  position: relative; /* 相对定位 */
 }
 
+/* 作品集详情信息标题下方的装饰线样式 */
 .portfolio-details .portfolio-info h3:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  bottom: 0;
+  content: ""; /* 伪元素内容为空 */
+  position: absolute; /* 绝对定位 */
+  display: block; /* 显示为块级元素 */
+  width: 50px; /* 宽度 */
+  height: 3px; /* 高度 */
+  background: var(--accent-color); /* 背景颜色 */
+  left: 0; /* 左侧距离 */
+  bottom: 0; /* 底部距离 */
 }
 
+/* 作品集详情信息列表的样式 */
 .portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
+  list-style: none; /* 去掉列表项的默认样式 */
+  padding: 0; /* 内边距为0 */
+  font-size: 15px; /* 字体大小 */
 }
 
+/* 作品集详情信息列表项的样式 */
 .portfolio-details .portfolio-info ul li {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 15px;
+  display: flex; /* 使用 flexbox 布局 */
+  flex-direction: column; /* 垂直排列 */
+  padding-bottom: 15px; /* 底部内边距 */
 }
 
+/* 作品集详情信息列表项中加粗文本的样式 */
 .portfolio-details .portfolio-info ul strong {
-  text-transform: uppercase;
-  font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 14px;
+  text-transform: uppercase; /* 文本转为大写 */
+  font-weight: 400; /* 字体粗细 */
+  color: color-mix(in srgb, var(--default-color), transparent 50%); /* 字体颜色混合 */
+  font-size: 14px; /* 字体大小 */
 }
 
+/* 访问按钮的样式 */
 .portfolio-details .portfolio-info .btn-visit {
-  padding: 8px 40px;
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-radius: 50px;
-  transition: 0.3s;
+  padding: 8px 40px; /* 内边距 */
+  background: var(--accent-color); /* 背景颜色 */
+  color: var(--contrast-color); /* 字体颜色 */
+  border-radius: 50px; /* 圆角边框 */
+  transition: 0.3s; /* 过渡效果 */
 }
 
+/* 鼠标悬停时访问按钮的样式 */
 .portfolio-details .portfolio-info .btn-visit:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--accent-color), transparent 20%); /* 鼠标悬停时背景颜色 */
 }
 
+/* 作品集详情描述标题的样式 */
 .portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 26px; /* 字体大小 */
+  font-weight: 700; /* 字体粗细 */
+  margin-bottom: 20px; /* 底部外边距 */
 }
 
+/* 作品集详情描述段落的样式 */
 .portfolio-details .portfolio-description p {
-  padding: 0;
+  padding: 0; /* 内边距为0 */
 }
 
+/* 作品集详情描述中的推荐项样式 */
 .portfolio-details .portfolio-description .testimonial-item {
-  padding: 30px 30px 0 30px;
-  position: relative;
-  background: color-mix(in srgb, var(--default-color), transparent 97%);
-  margin-bottom: 50px;
+  padding: 30px 30px 0 30px; /* 内边距 */
+  position: relative; /* 相对定位 */
+  background: color-mix(in srgb, var(--default-color), transparent 97%); /* 背景颜色混合 */
+  margin-bottom: 50px; /* 底部外边距 */
 }
 
+/* 推荐项中的头像样式 */
 .portfolio-details .portfolio-description .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50px;
-  border: 6px solid var(--background-color);
-  float: left;
-  margin: 0 10px 0 0;
+  width: 90px; /* 头像宽度 */
+  border-radius: 50px; /* 圆角边框 */
+  border: 6px solid var(--background-color); /* 边框颜色 */
+  float: left; /* 左浮动 */
+  margin: 0 10px 0 0; /* 外边距 */
 }
 
+/* 推荐项中的姓名样式 */
 .portfolio-details .portfolio-description .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 15px 0 5px 0;
-  padding-top: 20px;
+  font-size: 18px; /* 字体大小 */
+  font-weight: bold; /* 字体粗细 */
+  margin: 15px 0 5px 0; /* 外边距 */
+  padding-top: 20px; /* 顶部内边距 */
 }
 
+/* 推荐项中的职位样式 */
 .portfolio-details .portfolio-description .testimonial-item h4 {
-  font-size: 14px;
-  color: #6c757d;
-  margin: 0;
+  font-size: 14px; /* 字体大小 */
+  color: #6c757d; /* 字体颜色 */
+  margin: 0; /* 外边距为0 */
 }
 
+/* 推荐项中的引号图标样式 */
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
-  font-size: 26px;
-  line-height: 0;
+  color: color-mix(in srgb, var(--accent-color), transparent 50%); /* 字体颜色混合 */
+  font-size: 26px; /* 字体大小 */
+  line-height: 0; /* 行高为0 */
 }
 
+/* 左侧引号图标的样式 */
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
+  display: inline-block; /* 显示为行内块级元素 */
+  left: -5px; /* 左侧距离 */
+  position: relative; /* 相对定位 */
 }
 
+/* 右侧引号图标的样式 */
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
+  display: inline-block; /* 显示为行内块级元素 */
+  right: -5px; /* 右侧距离 */
+  position: relative; /* 相对定位 */
+  top: 10px; /* 顶部距离 */
+  transform: scale(-1, -1); /* 翻转 */
 }
 
-.portfolio-details .portfolio-description .testimonial-item p {
-  font-style: italic;
-  margin: 0 0 15px 0 0 0;
-  padding: 0;
-}
-
-
-
-
-
-
+/* 推荐项中的描述文本样式 */
+.portfolio-details .
 

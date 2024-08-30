@@ -32,53 +32,68 @@
   }
   window.addEventListener('load', aosInit);
 
-  // 加载 gallery.json 并生成图片展示
   fetch('assets/img/gallery.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      const container = document.getElementById('portfolio-items'); // 确保选择正确的容器
-      data.forEach(item => {
-        const colDiv = document.createElement('div');
-        colDiv.className = `col-lg-4 col-md-6 portfolio-item isotope-item ${item.folder}`;
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    const container = document.getElementById('portfolio-items'); // 确保选择正确的容器
+    data.forEach(item => {
+      const colDiv = document.createElement('div');
+      colDiv.className = `col-lg-4 col-md-6 portfolio-item isotope-item ${item.folder}`;
 
-        const img = document.createElement('img');
-        img.setAttribute('data-src', item.src);
-        img.className = 'img-fluid lazyload';
-        img.alt = '';
+      const img = document.createElement('img');
+      img.setAttribute('data-src', item.src);
+      img.className = 'img-fluid lazyload';
+      img.alt = '';
 
-        const portfolioInfo = document.createElement('div');
-        portfolioInfo.className = 'portfolio-info';
+      const portfolioInfo = document.createElement('div');
+      portfolioInfo.className = 'portfolio-info';
 
-        const link = document.createElement('a');
-        link.href = item.src;
-        link.title = item.title;
-        link.setAttribute('data-gallery', 'portfolio-gallery-app');
-        link.className = 'glightbox preview-link';
-        link.innerHTML = '<i class="bi bi-zoom-in"></i>';
+      const link = document.createElement('a');
+      link.href = item.src; // 确保这里的路径是正确的
+      link.title = item.title;
+      link.setAttribute('data-gallery', 'portfolio-gallery-app');
+      link.className = 'glightbox preview-link';
+      link.innerHTML = '<i class="bi bi-zoom-in"></i>';
 
-        portfolioInfo.appendChild(link);
-        colDiv.appendChild(img);
-        colDiv.appendChild(portfolioInfo);
-        container.appendChild(colDiv);
-      });
+      // 添加 3D 窗口按钮
+      const threeDButton = document.createElement('a');
+      threeDButton.href = item.threeDLink; // 3D 窗口链接
+      threeDButton.className = 'btn btn-primary';
+      threeDButton.textContent = '3D';
+      threeDButton.target = '_blank'; // 在新窗口打开
 
-      // 重新初始化 Isotope 布局
-      if (typeof initIsotope !== 'undefined') {
-        initIsotope.reloadItems();
-        initIsotope.layout();
-      }
-    })
-    .catch(error => console.error('Error loading gallery.json:', error));
+      // 添加 图片组按钮
+      const galleryButton = document.createElement('a');
+      galleryButton.href = item.galleryLink; // 图片组链接
+      galleryButton.className = 'btn btn-secondary';
+      galleryButton.textContent = '详情';
+      galleryButton.target = '_blank'; // 在新窗口打开
 
-  // 初始化 GLightbox（用于图片弹窗）
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+      portfolioInfo.appendChild(link);
+      portfolioInfo.appendChild(threeDButton); // 添加 3D 窗口按钮
+      portfolioInfo.appendChild(galleryButton); // 添加 图片组按钮
+      colDiv.appendChild(img);
+      colDiv.appendChild(portfolioInfo);
+      container.appendChild(colDiv);
+    });
+
+    // 重新初始化 GLightbox
+    GLightbox({
+      selector: '.glightbox'
+    });
+
+    // 重新初始化 Isotope 布局
+    if (typeof initIsotope !== 'undefined') {
+      initIsotope.reloadItems();
+      initIsotope.layout();
+    }
+  })
+  .catch(error => console.error('Error loading gallery.json:', error));
 
   // 初始化 Pure Counter（用于统计数字）
   new PureCounter();
