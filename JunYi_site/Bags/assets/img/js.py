@@ -1,8 +1,10 @@
 import os
+import json
 
-def generate_html_for_folder(image_folder):
+def generate_json_for_folder(image_folder):
     image_extensions = ('.png', '.jpg', '.jpeg', '.gif', '.bmp')
-    
+    data = []  # 存储所有图片信息的列表
+
     # 遍历文件夹中的所有子文件夹
     for root, _, files in os.walk(image_folder):
         folder_name = os.path.basename(root)
@@ -13,26 +15,25 @@ def generate_html_for_folder(image_folder):
         if not images:
             continue
         
-        # 生成 HTML 内容
-        html_content = ''
+        # 生成图片信息
         for image in images:
             img_path = os.path.join('assets', 'img', folder_name, image).replace('\\', '/')
             img_name = os.path.splitext(image)[0]
-            html_content += f'''
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item {folder_name}">
-                <img data-src="{img_path}" class="img-fluid lazyload" alt="">
-                <div class="portfolio-info">
-                    <a href="{img_path}" title="{img_name}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-            </div>\n'''
+            # 创建图片信息字典
+            image_info = {
+                "folder": folder_name,
+                "src": img_path,
+                "title": img_name
+            }
+            data.append(image_info)
 
-        # 写入 HTML 文件
-        output_file = os.path.join(root, 'gallery.html')
-        with open(output_file, 'w', encoding='utf-8') as file:
-            file.write(html_content)
-        
-        print(f"HTML file generated: {output_file}")
+    # 写入 JSON 文件
+    output_file = os.path.join(image_folder, 'gallery.json')
+    with open(output_file, 'w', encoding='utf-8') as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
+    
+    print(f"JSON file generated: {output_file}")
 
 # 使用示例
 current_directory = os.getcwd()
-generate_html_for_folder(current_directory)
+generate_json_for_folder(current_directory)
