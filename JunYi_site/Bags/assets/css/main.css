@@ -1,41 +1,54 @@
+/**
+* Template Name: iPortfolio
+* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Updated: Jun 29 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Montserrat",  sans-serif;
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #32353a; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e84545; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #3a3939;  /* The default color of the main navmenu links */
-  --nav-hover-color: #e84545; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #3a3939; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #e84545; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f9f9f9;
+  --background-color: #f4fafd;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #040b14;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #252525;
+  --surface-color: #151f2b;
   --contrast-color: #ffffff;
 }
 
@@ -44,434 +57,1219 @@
   scroll-behavior: smooth;
 }
 
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
 
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
 
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/* PHP Email Form Messages
+------------------------------*/
+.php-email-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: var(--surface-color);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--surface-color);
+  animation: php-email-form-loading 1s linear infinite;
+}
+
+@keyframes php-email-form-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+.header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 15px;
+  width: 300px;
+  transition: all ease-in-out 0.3s;
+  overflow-y: auto;
+  z-index: 997;
+  border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.header .profile-img img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.header .logo {
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.header .logo img {
+  max-height: 32px;
+  margin-right: 8px;
+}
+
+.header .logo h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.header .social-links {
+  margin: 0 0 20px 0;
+}
+
+.header .social-links a {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  color: var(--default-color);
+  margin: 0 2px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.header .social-links a:hover {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+}
+
+@media (min-width: 1200px) {
+
+  .header~main,
+  .header~#footer {
+    margin-left: 300px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header {
+    left: -100%;
+  }
+}
+
+.header.header-show {
+  left: 0;
+}
+
+.header .header-toggle {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+.header .header-toggle:hover {
+  color: var(--contrast-color);
+  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.mobile-nav-toggle {
+  display: none;
+}
+
+.navmenu {
+  padding: 0;
+  z-index: 9997;
+}
+
+.navmenu ul {
+  list-style: none;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
+.navmenu a,
+.navmenu a:focus {
+  color: var(--nav-color);
+  padding: 15px 10px;
+  font-family: var(--nav-font);
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.navmenu a .navicon,
+.navmenu a:focus .navicon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.navmenu a .toggle-dropdown,
+.navmenu a:focus .toggle-dropdown {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  flex-shrink: 0;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+}
+
+.navmenu a .toggle-dropdown:hover,
+.navmenu a:focus .toggle-dropdown:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus {
+  color: var(--nav-hover-color);
+}
+
+.navmenu a:hover .navicon,
+.navmenu .active .navicon,
+.navmenu .active:focus .navicon {
+  color: var(--accent-color);
+}
+
+.navmenu .active .toggle-dropdown,
+.navmenu .active:focus .toggle-dropdown {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  transform: rotate(180deg);
+}
+
+.navmenu .dropdown {
+  display: block;
+}
+
+.navmenu .dropdown a,
+.navmenu .dropdown a:focus {
+  color: --nav-dropdown-color;
+}
+
+.navmenu .dropdown a:hover,
+.navmenu .dropdown .active,
+.navmenu .dropdown .active:focus {
+  color: var(--nav-dropdown-hover-color);
+}
+
+.navmenu .dropdown ul {
+  position: static;
+  display: none;
+  z-index: 99;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  background-color: var(--nav-dropdown-background-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.navmenu .dropdown ul ul {
+  background-color: rgba(33, 37, 41, 0.1);
+}
+
+.navmenu .dropdown>.dropdown-active {
+  display: block;
+  background-color: rgba(33, 37, 41, 0.03);
+}
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  padding: 40px 0;
+  position: relative;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .credits {
+  margin-top: 4px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffffff;
+  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
-
-/* 滚动到顶部按钮的样式 */
 .scroll-top {
-  position: fixed; /* 固定定位 */
-  visibility: hidden; /* 初始状态为隐藏 */
-  opacity: 0; /* 初始透明度为0 */
-  right: 15px; /* 右侧距离 */
-  bottom: 15px; /* 底部距离 */
-  z-index: 99999; /* 层级，确保在最上层 */
-  background-color: var(--accent-color); /* 背景颜色 */
-  width: 40px; /* 宽度 */
-  height: 40px; /* 高度 */
-  border-radius: 4px; /* 圆角边框 */
-  transition: all 0.4s; /* 过渡效果 */
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
 }
 
-/* 滚动到顶部按钮中图标的样式 */
 .scroll-top i {
-  font-size: 24px; /* 图标字体大小 */
-  color: var(--contrast-color); /* 图标颜色 */
-  line-height: 0; /* 行高为0 */
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
 }
 
-/* 鼠标悬停时的按钮样式 */
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%); /* 鼠标悬停时背景颜色 */
-  color: var(--contrast-color); /* 鼠标悬停时字体颜色 */
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
 }
 
-/* 当按钮处于活动状态时的样式 */
 .scroll-top.active {
-  visibility: visible; /* 显示按钮 */
-  opacity: 1; /* 透明度为1 */
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
 }
-
 
 /*--------------------------------------------------------------
-# 主题
+# Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-
-/* section 和 .section 的样式 */
-section,
-.section {
-  color: var(--default-color); /* 字体颜色 */
-  background-color: var(--background-color); /* 背景颜色 */
-  padding: 60px 0; /* 上下内边距 */
-  scroll-margin-top: 98px; /* 滚动时的顶部外边距 */
-  overflow: clip; /* 溢出内容裁剪 */
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
 }
 
-/* 小屏幕设备（最大宽度为1199px）下的样式 */
-@media (max-width: 1199px) {
-  section,
-  .section {
-    scroll-margin-top: 64px; /* 滚动时的顶部外边距减少 */
-  }
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 25px 0;
+  position: relative;
+}
+
+.page-title h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-title .breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  overflow: clip;
 }
 
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
-
-/* 全局部分标题的样式 */
 .section-title {
-  text-align: center; /* 文本居中对齐 */
-  padding-bottom: 60px; /* 底部内边距 */
-  position: relative; /* 相对定位 */
+  padding-bottom: 60px;
+  position: relative;
 }
 
-/* 全局部分标题 h2 的样式 */
 .section-title h2 {
-  font-size: 32px; /* 字体大小 */
-  font-weight: 700; /* 字体粗细 */
-  position: relative; /* 相对定位 */
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
-/* 全局部分标题 h2 的伪元素样式 */
-.section-title h2:before,
 .section-title h2:after {
-  content: ""; /* 伪元素内容为空 */
-  width: 50px; /* 宽度 */
-  height: 2px; /* 高度 */
-  background: var(--accent-color); /* 背景颜色 */
-  display: inline-block; /* 显示为行内块级元素 */
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
 }
 
-/* h2 标题前的装饰线样式 */
-.section-title h2:before {
-  margin: 0 15px 10px 0; /* 外边距 */
-}
-
-/* h2 标题后的装饰线样式 */
-.section-title h2:after {
-  margin: 0 0 10px 15px; /* 外边距 */
-}
-
-/* 全局部分标题段落的样式 */
 .section-title p {
-  margin-bottom: 0; /* 底部外边距为0 */
+  margin-bottom: 0;
 }
 
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
 
+.hero:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 70%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
 
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero p {
+  margin: 5px 0 0 0;
+  font-size: 26px;
+}
+
+.hero p span {
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.hero .social-links {
+  margin-top: 25px;
+}
+
+.hero .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.hero .social-links a:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
+}
+
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
+.stats .stats-item {
+  padding: 30px;
+  width: 100%;
+}
+
+.stats .stats-item i {
+  color: var(--accent-color);
+  display: block;
+  font-size: 44px;
+  float: left;
+  line-height: 0;
+}
+
+.stats .stats-item .purecounter {
+  color: var(--heading-color);
+  font-size: 48px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  margin-left: 60px;
+}
+
+.stats .stats-item p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  padding: 15px 0 0 0;
+  margin: 0 0 0 60px;
+  font-family: var(--heading-font);
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Skills Section
+--------------------------------------------------------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  color: var(--heading-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Resume Section
+--------------------------------------------------------------*/
+.resume .resume-title {
+  color: var(--heading-color);
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--accent-color);
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
 
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-
-/* 作品集过滤器样式 */
 .portfolio .portfolio-filters {
-  padding: 0; /* 内边距为0 */
-  margin: 0 auto 20px auto; /* 上下外边距为0，左右居中，底部外边距为20px */
-  list-style: none; /* 去掉列表项的默认样式 */
-  text-align: center; /* 文本居中对齐 */
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
 }
 
-/* 作品集过滤器每个列表项的样式 */
 .portfolio .portfolio-filters li {
-  cursor: pointer; /* 鼠标悬停时显示为手型 */
-  display: inline-block; /* 使列表项横向排列 */
-  padding: 8px 20px 10px 20px; /* 上下左右内边距 */
-  margin: 0; /* 外边距为0 */
-  font-size: 15px; /* 字体大小 */
-  font-weight: 500; /* 字体粗细 */
-  line-height: 1; /* 行高 */
-  margin-bottom: 5px; /* 底部外边距 */
-  border-radius: 50px; /* 圆角边框 */
-  transition: all 0.3s ease-in-out; /* 过渡效果 */
-  font-family: var(--heading-font); /* 使用自定义字体 */
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
-/* 鼠标悬停或选中的过滤器项的样式 */
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: var(--contrast-color); /* 字体颜色 */
-  background-color: var(--accent-color); /* 背景颜色 */
+  color: var(--accent-color);
 }
 
-/* 过滤器列表的第一个项的样式 */
 .portfolio .portfolio-filters li:first-child {
-  margin-left: 0; /* 左外边距为0 */
+  margin-left: 0;
 }
 
-/* 过滤器列表的最后一个项的样式 */
 .portfolio .portfolio-filters li:last-child {
-  margin-right: 0; /* 右外边距为0 */
+  margin-right: 0;
 }
 
-/* 小屏幕设备（最大宽度为575px）下的样式 */
 @media (max-width: 575px) {
   .portfolio .portfolio-filters li {
-    font-size: 14px; /* 字体大小 */
-    margin: 0 0 10px 0; /* 上下外边距，底部外边距为10px */
+    font-size: 14px;
+    margin: 0 5px;
   }
 }
 
-/* 作品集项的样式 */
-.portfolio .portfolio-item {
-  position: relative; /* 相对定位 */
-  overflow: hidden; /* 隐藏超出部分 */
+.portfolio .portfolio-content {
+  position: relative;
+  overflow: hidden;
 }
 
-/* 作品集项信息的样式 */
-.portfolio .portfolio-item .portfolio-info {
-  opacity: 0; /* 初始透明度为0 */
-  position: absolute; /* 绝对定位 */
-  left: 12px; /* 左侧距离 */
-  right: 12px; /* 右侧距离 */
-  bottom: -100%; /* 初始位置在底部外面 */
-  z-index: 3; /* 层级 */
-  transition: all ease-in-out 0.5s; /* 过渡效果 */
-  background: color-mix(in srgb, var(--background-color), transparent 10%); /* 背景颜色混合 */
-  padding: 15px; /* 内边距 */
+.portfolio .portfolio-content img {
+  transition: 0.3s;
 }
 
-/* 作品集项信息标题的样式 */
-.portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px; /* 字体大小 */
-  font-weight: 600; /* 字体粗细 */
-  padding-right: 50px; /* 右侧内边距 */
+.portfolio .portfolio-content .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
 }
 
-/* 作品集项信息描述的样式 */
-.portfolio .portfolio-item .portfolio-info p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%); /* 字体颜色混合 */
-  font-size: 14px; /* 字体大小 */
-  margin-bottom: 0; /* 底部外边距为0 */
-  padding-right: 50px; /* 右侧内边距 */
+.portfolio .portfolio-content .portfolio-info h4 {
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline-block;
+  background-color: var(--accent-color);
 }
 
-/* 作品集项信息中预览链接和详情链接的样式 */
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute; /* 绝对定位 */
-  right: 50px; /* 右侧距离 */
-  font-size: 24px; /* 字体大小 */
-  top: calc(50% - 14px); /* 垂直居中 */
-  color: color-mix(in srgb, var(--default-color), transparent 30%); /* 字体颜色混合 */
-  transition: 0.3s; /* 过渡效果 */
-  line-height: 0; /* 行高为0 */
+.portfolio .portfolio-content .portfolio-info p {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-/* 鼠标悬停时预览链接和详情链接的样式 */
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: var(--accent-color); /* 鼠标悬停时字体颜色 */
+.portfolio .portfolio-content .portfolio-info .preview-link,
+.portfolio .portfolio-content .portfolio-info .details-link {
+  position: absolute;
+  left: calc(50% - 40px);
+  font-size: 26px;
+  top: calc(50% - 14px);
+  color: #fff;
+  transition: 0.3s;
+  line-height: 1.2;
 }
 
-/* 详情链接的样式 */
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 14px; /* 右侧距离 */
-  font-size: 28px; /* 字体大小 */
+.portfolio .portfolio-content .portfolio-info .preview-link:hover,
+.portfolio .portfolio-content .portfolio-info .details-link:hover {
+  color: var(--accent-color);
 }
 
-/* 鼠标悬停在作品集项上时的信息样式 */
-.portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1; /* 透明度变为1 */
-  bottom: 0; /* 位置回到正常 */
+.portfolio .portfolio-content .portfolio-info .details-link {
+  left: 50%;
+  font-size: 34px;
+  line-height: 0;
 }
 
+.portfolio .portfolio-content:hover .portfolio-info {
+  opacity: 1;
+}
 
+.portfolio .portfolio-content:hover img {
+  transform: scale(1.1);
+}
 
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .service-item {
+  position: relative;
+}
 
+.services .service-item .icon {
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid var(--accent-color);
+  margin-right: 20px;
+}
 
+.services .service-item .icon i {
+  color: var(--contrast-color);
+  font-size: 24px;
+  line-height: 0;
+}
 
+.services .service-item:hover .icon {
+  background: var(--surface-color);
+}
+
+.services .service-item:hover .icon i {
+  color: var(--accent-color);
+}
+
+.services .service-item .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .service-item .title a {
+  color: var(--heading-color);
+}
+
+.services .service-item .title a:hover {
+  color: var(--accent-color);
+}
+
+.services .service-item .description {
+  line-height: 24px;
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  text-align: center;
+  min-height: 320px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin: 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--accent-color), transparent 40%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 15px 15px;
+  padding: 20px;
+  background-color: var(--surface-color);
+  position: relative;
+  margin-bottom: 35px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonial-item p::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid var(--surface-color);
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+
+.testimonials .swiper-wrapper {
+  height: auto;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 40px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--background-color);
+  opacity: 1;
+  border: 1px solid var(--accent-color);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-wrap {
+  background-color: var(--surface-color);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+@media (max-width: 575px) {
+  .contact .info-wrap {
+    padding: 20px;
+  }
+}
+
+.contact .info-item {
+  margin-bottom: 40px;
+}
+
+.contact .info-item i {
+  font-size: 20px;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact .info-item:hover i {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.contact .php-email-form {
+  background-color: var(--surface-color);
+  height: 100%;
+  padding: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 575px) {
+  .contact .php-email-form {
+    padding: 20px;
+  }
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: var(--surface-color);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-
-/* 作品集详情部分的图片样式 */
 .portfolio-details .portfolio-details-slider img {
-  width: 100%; /* 图片宽度占满100% */
+  width: 100%;
 }
 
-/* Swiper 组件的包装器样式 */
-.portfolio-details .swiper-wrapper {
-  height: auto; /* 高度自适应 */
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
 }
 
-/* Swiper 组件的上一页和下一页按钮样式 */
-.portfolio-details .swiper-button-prev,
-.portfolio-details .swiper-button-next {
-  width: 48px; /* 按钮宽度 */
-  height: 48px; /* 按钮高度 */
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
 }
 
-/* Swiper 按钮的伪元素样式 */
-.portfolio-details .swiper-button-prev:after,
-.portfolio-details .swiper-button-next:after {
-  color: rgba(255, 255, 255, 0.8); /* 字体颜色 */
-  background-color: rgba(0, 0, 0, 0.15); /* 背景颜色 */
-  font-size: 24px; /* 字体大小 */
-  border-radius: 50%; /* 圆形边框 */
-  width: 48px; /* 按钮宽度 */
-  height: 48px; /* 按钮高度 */
-  display: flex; /* 使用 flexbox 布局 */
-  align-items: center; /* 垂直居中对齐 */
-  justify-content: center; /* 水平居中对齐 */
-  transition: 0.3s; /* 过渡效果 */
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
 }
 
-/* 鼠标悬停时的按钮样式 */
-.portfolio-details .swiper-button-prev:hover:after,
-.portfolio-details .swiper-button-next:hover:after {
-  background-color: rgba(0, 0, 0, 0.3); /* 鼠标悬停时背景颜色 */
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-/* 小屏幕设备（最大宽度为575px）下的按钮样式 */
-@media (max-width: 575px) {
-  .portfolio-details .swiper-button-prev,
-  .portfolio-details .swiper-button-next {
-    display: none; /* 隐藏按钮 */
-  }
-}
-
-/* Swiper 组件的分页器样式 */
-.portfolio-details .swiper-pagination {
-  margin-top: 20px; /* 上外边距 */
-  position: relative; /* 相对定位 */
-}
-
-/* Swiper 分页器的每个小圆点样式 */
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
-  width: 10px; /* 小圆点宽度 */
-  height: 10px; /* 小圆点高度 */
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%); /* 背景颜色混合 */
-  opacity: 1; /* 不透明度 */
-}
-
-/* 当前激活的小圆点样式 */
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color); /* 激活状态背景颜色 */
-}
-
-/* 作品集详情信息标题的样式 */
 .portfolio-details .portfolio-info h3 {
-  font-size: 22px; /* 字体大小 */
-  font-weight: 700; /* 字体粗细 */
-  margin-bottom: 20px; /* 底部外边距 */
-  padding-bottom: 20px; /* 底部内边距 */
-  position: relative; /* 相对定位 */
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-/* 作品集详情信息标题下方的装饰线样式 */
-.portfolio-details .portfolio-info h3:after {
-  content: ""; /* 伪元素内容为空 */
-  position: absolute; /* 绝对定位 */
-  display: block; /* 显示为块级元素 */
-  width: 50px; /* 宽度 */
-  height: 3px; /* 高度 */
-  background: var(--accent-color); /* 背景颜色 */
-  left: 0; /* 左侧距离 */
-  bottom: 0; /* 底部距离 */
-}
-
-/* 作品集详情信息列表的样式 */
 .portfolio-details .portfolio-info ul {
-  list-style: none; /* 去掉列表项的默认样式 */
-  padding: 0; /* 内边距为0 */
-  font-size: 15px; /* 字体大小 */
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
 }
 
-/* 作品集详情信息列表项的样式 */
-.portfolio-details .portfolio-info ul li {
-  display: flex; /* 使用 flexbox 布局 */
-  flex-direction: column; /* 垂直排列 */
-  padding-bottom: 15px; /* 底部内边距 */
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
 }
 
-/* 作品集详情信息列表项中加粗文本的样式 */
-.portfolio-details .portfolio-info ul strong {
-  text-transform: uppercase; /* 文本转为大写 */
-  font-weight: 400; /* 字体粗细 */
-  color: color-mix(in srgb, var(--default-color), transparent 50%); /* 字体颜色混合 */
-  font-size: 14px; /* 字体大小 */
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
 }
 
-/* 访问按钮的样式 */
-.portfolio-details .portfolio-info .btn-visit {
-  padding: 8px 40px; /* 内边距 */
-  background: var(--accent-color); /* 背景颜色 */
-  color: var(--contrast-color); /* 字体颜色 */
-  border-radius: 50px; /* 圆角边框 */
-  transition: 0.3s; /* 过渡效果 */
-}
-
-/* 鼠标悬停时访问按钮的样式 */
-.portfolio-details .portfolio-info .btn-visit:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%); /* 鼠标悬停时背景颜色 */
-}
-
-/* 作品集详情描述标题的样式 */
 .portfolio-details .portfolio-description h2 {
-  font-size: 26px; /* 字体大小 */
-  font-weight: 700; /* 字体粗细 */
-  margin-bottom: 20px; /* 底部外边距 */
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-/* 作品集详情描述段落的样式 */
 .portfolio-details .portfolio-description p {
-  padding: 0; /* 内边距为0 */
+  padding: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-/* 作品集详情描述中的推荐项样式 */
-.portfolio-details .portfolio-description .testimonial-item {
-  padding: 30px 30px 0 30px; /* 内边距 */
-  position: relative; /* 相对定位 */
-  background: color-mix(in srgb, var(--default-color), transparent 97%); /* 背景颜色混合 */
-  margin-bottom: 50px; /* 底部外边距 */
+/*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
+.service-details .services-list {
+  padding: 10px 30px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  margin-bottom: 20px;
 }
 
-/* 推荐项中的头像样式 */
-.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
-  width: 90px; /* 头像宽度 */
-  border-radius: 50px; /* 圆角边框 */
-  border: 6px solid var(--background-color); /* 边框颜色 */
-  float: left; /* 左浮动 */
-  margin: 0 10px 0 0; /* 外边距 */
+.service-details .services-list a {
+  display: block;
+  line-height: 1;
+  padding: 8px 0 8px 15px;
+  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  margin: 20px 0;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  transition: 0.3s;
 }
 
-/* 推荐项中的姓名样式 */
-.portfolio-details .portfolio-description .testimonial-item h3 {
-  font-size: 18px; /* 字体大小 */
-  font-weight: bold; /* 字体粗细 */
-  margin: 15px 0 5px 0; /* 外边距 */
-  padding-top: 20px; /* 顶部内边距 */
+.service-details .services-list a.active {
+  color: var(--heading-color);
+  font-weight: 700;
+  border-color: var(--accent-color);
 }
 
-/* 推荐项中的职位样式 */
-.portfolio-details .portfolio-description .testimonial-item h4 {
-  font-size: 14px; /* 字体大小 */
-  color: #6c757d; /* 字体颜色 */
-  margin: 0; /* 外边距为0 */
+.service-details .services-list a:hover {
+  border-color: var(--accent-color);
 }
 
-/* 推荐项中的引号图标样式 */
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%); /* 字体颜色混合 */
-  font-size: 26px; /* 字体大小 */
-  line-height: 0; /* 行高为0 */
+.service-details .services-img {
+  margin-bottom: 20px;
 }
 
-/* 左侧引号图标的样式 */
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
-  display: inline-block; /* 显示为行内块级元素 */
-  left: -5px; /* 左侧距离 */
-  position: relative; /* 相对定位 */
+.service-details h3 {
+  font-size: 26px;
+  font-weight: 700;
 }
 
-/* 右侧引号图标的样式 */
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  display: inline-block; /* 显示为行内块级元素 */
-  right: -5px; /* 右侧距离 */
-  position: relative; /* 相对定位 */
-  top: 10px; /* 顶部距离 */
-  transform: scale(-1, -1); /* 翻转 */
+.service-details h4 {
+  font-size: 20px;
+  font-weight: 700;
 }
 
-/* 推荐项中的描述文本样式 */
-.portfolio-details .
+.service-details p {
+  font-size: 15px;
+}
 
+.service-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.service-details ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.service-details ul i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Starter Section Section
+--------------------------------------------------------------*/
+.starter-section {
+  /* Add your styles here */
+}
