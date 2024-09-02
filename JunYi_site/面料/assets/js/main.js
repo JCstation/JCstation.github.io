@@ -1,9 +1,9 @@
-
 (function() {
   "use strict";
 
   /**
    * Header toggle
+   * 切换头部菜单的显示和隐藏
    */
   const headerToggleBtn = document.querySelector('.header-toggle');
 
@@ -16,6 +16,7 @@
 
   /**
    * Hide mobile nav on same-page/hash links
+   * 在点击相同页面的链接或锚点链接时，隐藏移动端导航
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
@@ -28,6 +29,7 @@
 
   /**
    * Toggle mobile nav dropdowns
+   * 切换移动端导航的下拉菜单
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
     navmenu.addEventListener('click', function(e) {
@@ -40,6 +42,7 @@
 
   /**
    * Preloader
+   * 加载页面时显示预加载动画
    */
   const preloader = document.querySelector('#preloader');
   if (preloader) {
@@ -50,6 +53,7 @@
 
   /**
    * Scroll top button
+   * 滚动到顶部按钮
    */
   let scrollTop = document.querySelector('.scroll-top');
 
@@ -71,6 +75,7 @@
 
   /**
    * Animation on scroll function and init
+   * 初始化滚动动画
    */
   function aosInit() {
     AOS.init({
@@ -84,6 +89,7 @@
 
   /**
    * Init typed.js
+   * 初始化文本打字效果
    */
   const selectTyped = document.querySelector('.typed');
   if (selectTyped) {
@@ -100,11 +106,13 @@
 
   /**
    * Initiate Pure Counter
+   * 初始化计数器
    */
   new PureCounter();
 
   /**
    * Animate the skills items on reveal
+   * 在技能项目可见时启动动画
    */
   let skillsAnimation = document.querySelectorAll('.skills-animation');
   skillsAnimation.forEach((item) => {
@@ -122,6 +130,7 @@
 
   /**
    * Initiate glightbox
+   * 初始化光箱插件
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
@@ -129,6 +138,7 @@
 
   /**
    * Init isotope layout and filters
+   * 初始化 Isotope 布局和过滤器
    */
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
@@ -162,6 +172,7 @@
 
   /**
    * Init swiper sliders
+   * 初始化 Swiper 滑块
    */
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
@@ -181,6 +192,7 @@
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
+   * 页面加载时，修正包含锚点链接的滚动位置
    */
   window.addEventListener('load', function(e) {
     if (window.location.hash) {
@@ -199,6 +211,7 @@
 
   /**
    * Navmenu Scrollspy
+   * 导航菜单滚动监视
    */
   let navmenulinks = document.querySelectorAll('.navmenu a');
 
@@ -224,7 +237,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   // 动态加载 HTML 文件并插入到指定的容器
   function loadDynamicContent() {
-    fetch('assets/img/gallery.html')  // 替换为你生成的 HTML 文件路径
+    fetch('assets/gallery.html')  // 替换为你生成的 HTML 文件路径
       .then(response => response.text())
       .then(data => {
         document.getElementById('dynamic-content').innerHTML = data;  // 将加载的内容插入到 #dynamic-content 容器中
