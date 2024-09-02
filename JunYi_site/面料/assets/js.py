@@ -83,7 +83,7 @@ def generate_html_from_json(json_file):
             <img src="{main_image}" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>{folder_name}</h4>
-              <p>这是由钧艺创建的简单示例</p>
+              <p>这是由钧艺创建的产品示例</p>
               <a href="{main_image}" title="{folder_name}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               {details_link}
             </div>

@@ -9,7 +9,7 @@
 :root { 
   --background-color: #ffffff; /* 整个网站的背景颜色，包括各个部分的背景 */
   --default-color: #272829; /* 网站上大多数文本内容的默认颜色 */
-  --heading-color: rgb(252, 0, 0); /* 标题、副标题和标题的颜色 */
+  --heading-color: rgb(0, 0, 0); /* 标题、副标题和标题的颜色 */
   --accent-color: #0d6086; /* 代表品牌的强调颜色。用于按钮、链接和需要突出显示的其他元素 */
   --surface-color: #ffffff; /* 表面颜色，用于部分的背景，例如卡片、图标框等，需要与全局背景有视觉区分的元素 */
   --contrast-color: #ffffff; /* 用于文本的对比色，以确保在强调、标题或默认颜色的背景上可读性 */

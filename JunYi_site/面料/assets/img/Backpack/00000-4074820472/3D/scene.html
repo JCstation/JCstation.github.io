@@ -13,11 +13,20 @@
             height: auto;
         }
     </style>
-    <script src="https://viewer.marmoset.co/main/marmoset.js"></script>
 </head>
 <body>
+    <script src="marmoset.js"></script>
     <script>
-        marmoset.embed('scene.mview', { autoStart: true, fullFrame: true, pagePreset: false });
+        // 确保marmoset.js的embed方法和参数正确
+        if (typeof marmoset !== 'undefined') {
+            marmoset.embed('scene.mview', {
+                autoStart: true,
+                fullFrame: true,
+                pagePreset: false
+            });
+        } else {
+            console.error('marmoset is not defined');
+        }
     </script>
 </body>
 </html>
