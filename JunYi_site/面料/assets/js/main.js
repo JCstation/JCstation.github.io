@@ -220,3 +220,30 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+document.addEventListener('DOMContentLoaded', function () {
+  // 动态加载 HTML 文件并插入到指定的容器
+  function loadDynamicContent() {
+    fetch('assets/img/gallery.html')  // 替换为你生成的 HTML 文件路径
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('dynamic-content').innerHTML = data;  // 将加载的内容插入到 #dynamic-content 容器中
+        
+        // 重新初始化 Isotope 布局
+        let grid = document.querySelector('.isotope-container');
+        let iso = new Isotope(grid, {
+          itemSelector: '.portfolio-item',
+          layoutMode: 'masonry'
+        });
+
+        // 初始化 glightbox (如果需要)
+        const lightbox = GLightbox({
+          selector: '.glightbox'
+        });
+      })
+      .catch(error => console.error('Error loading dynamic content:', error));
+  }
+
+  // 调用函数加载内容
+  loadDynamicContent();
+});

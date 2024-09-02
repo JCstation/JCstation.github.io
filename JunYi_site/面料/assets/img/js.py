@@ -47,7 +47,42 @@ def generate_json_for_folder(image_folder):
         json.dump(data, file, ensure_ascii=False, indent=4)
 
     print(f"JSON file generated: {output_file}")
+    return output_file
+
+def generate_html_from_json(json_file):
+    # 读取 JSON 文件
+    with open(json_file, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    html_content = ""  # 存储生成的 HTML 代码
+
+    # 遍历 JSON 数据生成 HTML
+    for item in data:
+        folder_name = item["folder"]
+        main_image = item["src"]
+        three_d_link = item["threeDLink"]
+
+        html_content += f'''
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="{main_image}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>{folder_name}</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <a href="{main_image}" title="{folder_name}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="{three_d_link}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+        '''
+    # 保存生成的 HTML 文件
+    output_html_file = os.path.join(os.path.dirname(json_file), 'gallery.html')
+    with open(output_html_file, 'w', encoding='utf-8') as file:
+        file.write(html_content)
+
+    print(f"HTML file generated: {output_html_file}")
 
 # 使用示例
 current_directory = os.getcwd()  # 获取当前工作目录
-generate_json_for_folder(current_directory)  # 传入图片文件夹路径
+json_file_path = generate_json_for_folder(current_directory)  # 生成 JSON 文件
+generate_html_from_json(json_file_path)  # 生成 HTML 文件
